@@ -1,0 +1,60 @@
+// Ant Design 主题定制
+// 配合 SCSS 主题系统使用
+
+// 亮色主题变量
+:root {
+  --antd-primary-color: #1677ff;
+  --antd-success-color: #52c41a;
+  --antd-warning-color: #faad14;
+  --antd-error-color: #ff4d4f;
+  --antd-font-size-base: 14px;
+  --antd-border-radius-base: 6px;
+}
+
+// 暗色主题变量
+html[data-theme='dark'] {
+  --antd-primary-color: #1668dc;
+  --antd-success-color: #49aa19;
+  --antd-warning-color: #d89614;
+  --antd-error-color: #dc4446;
+}
+
+// 覆盖 Ant Design 样式
+.ant-layout {
+  background: var(--bg);
+}
+
+.ant-layout-header {
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+  color: var(--header-color);
+}
+
+.ant-card {
+  background: var(--card-bg);
+  border-color: var(--card-border);
+}
+
+.ant-menu {
+  background: var(--menu-bg);
+  color: var(--menu-color);
+
+  .ant-menu-item:hover {
+    background: var(--menu-hoverBg) !important;
+  }
+
+  .ant-menu-item-selected {
+    background: var(--menu-activeBg) !important;
+    color: var(--menu-activeColor) !important;
+  }
+}
+
+.ant-btn-primary {
+  background: var(--button-bg);
+  border-color: var(--button-border);
+
+  &:hover {
+    background: var(--button-hoverBg) !important;
+    border-color: var(--button-hoverBorder) !important;
+  }
+}

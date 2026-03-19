@@ -1,0 +1,164 @@
+// 移动端布局
+.mobileLayout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+// 头部
+.mobileHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 100;
+
+  .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--header-color);
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+// 内容区域
+.mobileContent {
+  flex: 1;
+  margin-top: 56px;
+  margin-bottom: 64px;
+  padding: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// 底部导航
+.mobileTabBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: var(--bgContainer);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 100;
+
+  .tabItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 16px;
+    color: var(--textSecondary);
+    font-size: 12px;
+    transition: color 0.2s;
+
+    &.active {
+      color: var(--primary);
+    }
+
+    :global(.anticon) {
+      font-size: 24px;
+    }
+  }
+}
+
+// 侧边抽屉
+.drawer {
+  :global(.ant-drawer-content) {
+    background: var(--bgContainer);
+  }
+
+  :global(.ant-drawer-header) {
+    background: var(--bgContainer);
+    border-bottom: 1px solid var(--border);
+  }
+
+  :global(.ant-drawer-title) {
+    color: var(--text);
+  }
+
+  :global(.ant-menu) {
+    background: transparent;
+    border-right: none;
+  }
+}
+
+// 响应式断点
+$mobile: 768px;
+$tablet: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile + 1}) and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet + 1}) {
+    @content;
+  }
+}
+
+// 隐藏桌面端元素（在移动端）
+.hideOnMobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+// 隐藏移动端元素（在桌面端）
+.hideOnDesktop {
+  @include desktop {
+    display: none !important;
+  }
+}
+
+// 全宽按钮（移动端）
+.fullWidthButton {
+  @include mobile {
+    width: 100%;
+  }
+}
+
+// 卡片网格（移动端单列）
+.cardGrid {
+  display: grid;
+  gap: 16px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
