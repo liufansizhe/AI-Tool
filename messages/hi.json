@@ -1,0 +1,83 @@
+{
+    "metadata": {
+        "title": "AI टूलबॉक्स - सर्वश्रेष्ठ AI टूल खोजें",
+        "description": "AI चैट, AI कला, AI लेखन, AI वीडियो, कोडिंग सहायक और बहुत कुछ सहित दुनिया के सर्वश्रेष्ठ AI टूल का क्यूरेटेड संग्रह। अपनी उत्पादकता बढ़ाने के लिए सही AI सहायक खोजें।"
+    },
+    "nav": {
+        "home": "होम",
+        "category": "श्रेणियां",
+        "about": "हमारे बारे में",
+        "search": "खोजें",
+        "searchPlaceholder": "AI टूल खोजें..."
+    },
+    "hero": {
+        "title": "सर्वश्रेष्ठ खोजें",
+        "titleHighlight": "AI टूल",
+        "subtitle": "अपनी उत्पादकता बढ़ाने के लिए क्यूरेटेड AI टूल",
+        "searchPlaceholder": "AI टूल खोजें...",
+        "popularSearches": "लोकप्रिय खोज",
+        "stats": {
+            "tools": "AI टूल",
+            "categories": "श्रेणियां"
+        }
+    },
+    "categories": {
+        "title": "श्रेणियां ब्राउज़ करें",
+        "all": "सभी",
+        "chat": "AI चैट",
+        "image": "AI कला",
+        "writing": "AI लेखन",
+        "video": "AI वीडियो",
+        "audio": "AI ऑडियो",
+        "code": "कोडिंग",
+        "productivity": "उत्पादकता",
+        "design": "डिजाइन"
+    },
+    "tools": {
+        "title": "लोकप्रिय AI टूल",
+        "viewAll": "सभी देखें",
+        "visit": "वेबसाइट देखें",
+        "viewDetails": "विवरण देखें",
+        "featured": "विशेष",
+        "new": "नया",
+        "tags": {
+            "free": "मुफ्त",
+            "paid": "पेड",
+            "freemium": "आंशिक मुफ्त"
+        },
+        "price": {
+            "free": "मुफ्त",
+            "freemium": "मुफ्त परीक्षण",
+            "paid": "पेड"
+        }
+    },
+    "toolDetail": {
+        "backToHome": "होम पर वापस",
+        "toolIntro": "परिचय",
+        "tags": "टैग",
+        "priceInfo": "मूल्य",
+        "hasFree": "मुफ्त संस्करण उपलब्ध",
+        "noFree": "कोई मुफ्त संस्करण नहीं",
+        "hasPaid": "पेड योजनाएं उपलब्ध",
+        "fullyFree": "पूरी तरह मुफ्त",
+        "visitWebsite": "वेबसाइट देखें"
+    },
+    "footer": {
+        "slogan": "AI टूलबॉक्स",
+        "description": "अपनी उत्पादकता बढ़ाने के लिए क्यूरेटेड AI टूल",
+        "links": {
+            "title": "त्वरित लिंक",
+            "home": "होम",
+            "about": "हमारे बारे में",
+            "contact": "संपर्क करें"
+        },
+        "categories": "श्रेणियां ब्राउज़ करें",
+        "moreCategories": "और श्रेणियां",
+        "copyright": "सर्वाधिकार सुरक्षित",
+        "disclaimer": "सभी टूल लिंक केवल संदर्भ के लिए हैं। कृपया सटीक जानकारी के लिए आधिकारिक वेबसाइट देखें।"
+    },
+    "language": {
+        "title": "भाषा",
+        "switch": "भाषा बदलें"
+    }
+}

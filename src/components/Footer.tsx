@@ -1,9 +1,38 @@
+'use client';
+
 import { Github, Mail, Sparkles } from "lucide-react";
 
 import Link from "next/link";
+import { useLanguage } from '@/i18n/LanguageProvider';
+
+// Category ID to translation key mapping
+const categoryKeyMap: Record<string, string> = {
+  chat: 'chat',
+  image: 'image',
+  writing: 'writing',
+  video: 'video',
+  audio: 'audio',
+  code: 'code',
+  productivity: 'productivity',
+  design: 'design',
+};
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
+
+  const quickLinks = [
+    { id: 'chat', href: '/category/chat' },
+    { id: 'image', href: '/category/image' },
+    { id: 'code', href: '/category/code' },
+  ];
+
+  const moreCategories = [
+    { id: 'writing', href: '/category/writing' },
+    { id: 'video', href: '/category/video' },
+    { id: 'audio', href: '/category/audio' },
+    { id: 'productivity', href: '/category/productivity' },
+  ];
 
   return (
     <footer className='bg-gray-900 text-gray-300'>
@@ -15,14 +44,14 @@ export default function Footer() {
               <div className='w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center'>
                 <Sparkles className='w-5 h-5 text-white' />
               </div>
-              <span className='text-xl font-bold text-white'>AI工具箱</span>
+              <span className='text-xl font-bold text-white'>{t('footer.slogan')}</span>
             </Link>
             <p className='text-sm text-gray-400 mb-4'>
-              发现最实用的 AI 工具，帮你提升工作效率，释放创造力。
+              {t('footer.description')}
             </p>
             <div className='flex items-center gap-4'>
               <a
-                href='https://github.com'
+                href='https://github.com/liufansizhe/AI-Tool/issues'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-gray-400 hover:text-white transition-colors'
@@ -40,97 +69,53 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className='text-white font-semibold mb-4'>快速链接</h3>
+            <h3 className='text-white font-semibold mb-4'>{t('footer.links.title')}</h3>
             <ul className='space-y-2 text-sm'>
               <li>
                 <Link href='/' className='hover:text-white transition-colors'>
-                  首页
+                  {t('footer.links.home')}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href='/category/chat'
-                  className='hover:text-white transition-colors'
-                >
-                  AI 对话
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/category/image'
-                  className='hover:text-white transition-colors'
-                >
-                  AI 绘画
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/category/code'
-                  className='hover:text-white transition-colors'
-                >
-                  编程助手
-                </Link>
-              </li>
+              {quickLinks.map((link) => (
+                <li key={link.id}>
+                  <Link
+                    href={link.href}
+                    className='hover:text-white transition-colors'
+                  >
+                    {t(`categories.${categoryKeyMap[link.id]}`)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Categories */}
           <div>
-            <h3 className='text-white font-semibold mb-4'>更多分类</h3>
+            <h3 className='text-white font-semibold mb-4'>{t('footer.moreCategories')}</h3>
             <ul className='space-y-2 text-sm'>
-              <li>
-                <Link
-                  href='/category/writing'
-                  className='hover:text-white transition-colors'
-                >
-                  AI 写作
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/category/video'
-                  className='hover:text-white transition-colors'
-                >
-                  AI 视频
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/category/audio'
-                  className='hover:text-white transition-colors'
-                >
-                  AI 音频
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/category/productivity'
-                  className='hover:text-white transition-colors'
-                >
-                  效率工具
-                </Link>
-              </li>
+              {moreCategories.map((link) => (
+                <li key={link.id}>
+                  <Link
+                    href={link.href}
+                    className='hover:text-white transition-colors'
+                  >
+                    {t(`categories.${categoryKeyMap[link.id]}`)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* About */}
           <div>
-            <h3 className='text-white font-semibold mb-4'>关于</h3>
+            <h3 className='text-white font-semibold mb-4'>{t('nav.about')}</h3>
             <ul className='space-y-2 text-sm'>
               <li>
                 <Link
                   href='/about'
                   className='hover:text-white transition-colors'
                 >
-                  关于我们
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/submit'
-                  className='hover:text-white transition-colors'
-                >
-                  提交工具
+                  {t('footer.links.about')}
                 </Link>
               </li>
               <li>
@@ -138,7 +123,7 @@ export default function Footer() {
                   href='/about#contact'
                   className='hover:text-white transition-colors'
                 >
-                  联系我们
+                  {t('footer.links.contact')}
                 </Link>
               </li>
             </ul>
@@ -148,10 +133,10 @@ export default function Footer() {
         {/* Bottom */}
         <div className='border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4'>
           <p className='text-sm text-gray-500'>
-            © {currentYear} AI工具箱. All rights reserved.
+            © {currentYear} {t('footer.slogan')}. {t('footer.copyright')}.
           </p>
           <p className='text-sm text-gray-500'>
-            本站所有工具链接仅供参考，请以各工具官网信息为准
+            {t('footer.disclaimer')}
           </p>
         </div>
       </div>

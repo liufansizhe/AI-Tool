@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "AI工具箱 - 发现最实用的AI工具",
+    "description": "精选全球优质AI工具，包括AI对话、AI绘画、AI写作、AI视频、编程助手等，帮你快速找到合适的AI助手，提升工作效率。"
+  },
+  "nav": {
+    "home": "首页",
+    "category": "分类",
+    "about": "关于",
+    "search": "搜索",
+    "searchPlaceholder": "搜索AI工具..."
+  },
+  "hero": {
+    "title": "发现最实用的",
+    "titleHighlight": "AI工具",
+    "subtitle": "精选全球优质AI工具，帮你提升工作效率",
+    "searchPlaceholder": "搜索你想找的AI工具...",
+    "popularSearches": "热门搜索",
+    "stats": {
+      "tools": "AI工具",
+      "categories": "分类"
+    }
+  },
+  "categories": {
+    "title": "浏览分类",
+    "all": "全部",
+    "chat": "AI对话",
+    "image": "AI绘画",
+    "writing": "AI写作",
+    "video": "AI视频",
+    "audio": "AI音频",
+    "code": "编程助手",
+    "productivity": "效率工具",
+    "design": "设计工具"
+  },
+  "tools": {
+    "title": "热门AI工具",
+    "viewAll": "查看全部",
+    "visit": "访问官网",
+    "viewDetails": "查看详情",
+    "featured": "精选",
+    "new": "新上线",
+    "tags": {
+      "free": "免费",
+      "paid": "付费",
+      "freemium": "部分免费"
+    },
+    "price": {
+      "free": "完全免费",
+      "freemium": "免费试用",
+      "paid": "付费"
+    }
+  },
+  "toolDetail": {
+    "backToHome": "返回首页",
+    "toolIntro": "工具简介",
+    "tags": "功能标签",
+    "priceInfo": "价格信息",
+    "hasFree": "提供免费版",
+    "noFree": "不提供免费版",
+    "hasPaid": "提供付费版",
+    "fullyFree": "完全免费",
+    "visitWebsite": "访问官网"
+  },
+  "footer": {
+    "slogan": "AI工具箱",
+    "description": "精选全球优质AI工具，帮你提升工作效率",
+    "links": {
+      "title": "快速链接",
+      "home": "首页",
+      "about": "关于我们",
+      "contact": "联系我们"
+    },
+    "categories": "分类浏览",
+    "moreCategories": "更多分类",
+    "copyright": "版权所有",
+    "disclaimer": "本站所有工具链接仅供参考，请以各工具官网信息为准"
+  },
+  "language": {
+    "title": "语言",
+    "switch": "切换语言"
+  }
+}

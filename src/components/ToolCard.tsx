@@ -1,15 +1,42 @@
+'use client';
+
 import Link from 'next/link';
 import { Tool } from '@/types';
 import { Star, ExternalLink } from 'lucide-react';
-import { getPriceLabel, getPriceClass } from '@/lib/utils';
+import { useLanguage } from '@/i18n/LanguageProvider';
+import { getPriceClass } from '@/lib/utils';
 
 interface ToolCardProps {
   tool: Tool;
 }
 
+// Tool translations type
+type ToolTranslation = {
+  description: string;
+  fullDescription: string;
+  tags: string[];
+};
+
 export default function ToolCard({ tool }: ToolCardProps) {
-  const priceLabel = getPriceLabel(tool.isFree, tool.hasPaidPlan);
+  const { t, messages } = useLanguage();
+
+  // Get tool translation
+  const toolTranslations = (messages as Record<string, unknown>).toolsData as
+    Record<string, ToolTranslation> | undefined;
+  const translation = toolTranslations?.[tool.id];
+
+  const getPriceKey = (isFree: boolean, hasPaidPlan: boolean): string => {
+    if (isFree && !hasPaidPlan) return 'tools.price.free';
+    if (isFree && hasPaidPlan) return 'tools.price.freemium';
+    return 'tools.price.paid';
+  };
+
+  const priceLabel = t(getPriceKey(tool.isFree, tool.hasPaidPlan));
   const priceClass = getPriceClass(tool.isFree, tool.hasPaidPlan);
+
+  // Use translated or original description/tags
+  const description = translation?.description || tool.description;
+  const tags = translation?.tags || tool.tags;
 
   // 获取工具名称的首字母作为图标
   const initial = tool.name.charAt(0).toUpperCase();
@@ -34,14 +61,14 @@ export default function ToolCard({ tool }: ToolCardProps) {
       {tool.featured && (
         <div className="absolute -top-2 -right-2 flex items-center gap-1 px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium shadow-sm">
           <Star className="w-3 h-3 fill-current" />
-          <span>精选</span>
+          <span>{t('tools.featured')}</span>
         </div>
       )}
 
       {/* New Badge */}
       {tool.isNew && !tool.featured && (
         <div className="absolute -top-2 -right-2 px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium shadow-sm">
-          新上线
+          {t('tools.new')}
         </div>
       )}
 
@@ -88,14 +115,14 @@ export default function ToolCard({ tool }: ToolCardProps) {
           href={`/tool/${tool.id}`}
           className="flex-1 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors text-center"
         >
-          查看详情
+          {t('tools.viewDetails')}
         </Link>
         <a
           href={tool.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
           className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-          title="访问官网"
+          title={t('tools.visit') as string}
         >
           <ExternalLink className="w-4 h-4" />
         </a>

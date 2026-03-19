@@ -3,9 +3,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X, Sparkles } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageProvider';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t, locale, setLocale } = useLanguage();
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
@@ -16,7 +19,7 @@ export default function Header() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">AI工具箱</span>
+            <span className="text-xl font-bold text-gray-900">{t('footer.slogan')}</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -25,39 +28,27 @@ export default function Header() {
               href="/"
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
-              首页
+              {t('nav.home')}
             </Link>
             <Link
               href="/category/chat"
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
-              分类
-            </Link>
-            <Link
-              href="/submit"
-              className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
-            >
-              提交工具
+              {t('nav.category')}
             </Link>
             <Link
               href="/about"
               className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
-              关于
+              {t('nav.about')}
             </Link>
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link
-              href="/submit"
-              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              提交工具
-            </Link>
-          </div>
+          {/* Language Switcher & Mobile Menu Button */}
+          <div className="flex items-center gap-2">
+            <LanguageSwitcher currentLocale={locale} onChange={setLocale} />
 
-          {/* Mobile Menu Button */}
+            {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 text-gray-600 hover:text-gray-900"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -68,6 +59,7 @@ export default function Header() {
               <Menu className="w-6 h-6" />
             )}
           </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -79,28 +71,21 @@ export default function Header() {
                 className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                首页
+                {t('nav.home')}
               </Link>
               <Link
                 href="/category/chat"
                 className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                分类浏览
-              </Link>
-              <Link
-                href="/submit"
-                className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                提交工具
+                {t('nav.category')}
               </Link>
               <Link
                 href="/about"
                 className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                关于我们
+                {t('nav.about')}
               </Link>
             </nav>
           </div>

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { categories } from '@/data/categories';
+import { useLanguage } from '@/i18n/LanguageProvider';
 import {
   MessageSquare,
   Palette,
@@ -25,6 +26,18 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Layout,
 };
 
+// Category ID to translation key mapping
+const categoryKeyMap: Record<string, string> = {
+  chat: 'chat',
+  image: 'image',
+  writing: 'writing',
+  video: 'video',
+  audio: 'audio',
+  code: 'code',
+  productivity: 'productivity',
+  design: 'design',
+};
+
 interface CategoryFilterProps {
   currentCategory?: string;
 }
@@ -32,6 +45,7 @@ interface CategoryFilterProps {
 export default function CategoryFilter({ currentCategory }: CategoryFilterProps) {
   const pathname = usePathname();
   const isHome = pathname === '/';
+  const { t } = useLanguage();
 
   return (
     <div className="bg-white border-b border-gray-200 sticky top-16 z-40">
@@ -45,11 +59,12 @@ export default function CategoryFilter({ currentCategory }: CategoryFilterProps)
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
-            <span className="font-medium">全部</span>
+            <span className="font-medium">{t('categories.all')}</span>
           </Link>
           {categories.map((category) => {
             const Icon = iconMap[category.icon];
             const isActive = currentCategory === category.id;
+            const key = categoryKeyMap[category.id] || category.id;
 
             return (
               <Link
@@ -62,7 +77,7 @@ export default function CategoryFilter({ currentCategory }: CategoryFilterProps)
                 }`}
               >
                 {Icon && <Icon className="w-4 h-4" />}
-                <span className="font-medium">{category.name}</span>
+                <span className="font-medium">{t(`categories.${key}`)}</span>
               </Link>
             );
           })}

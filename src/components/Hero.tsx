@@ -3,10 +3,18 @@
 import { Search, Sparkles } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { useLanguage } from '@/i18n/LanguageProvider';
 
-const hotTags = ['ChatGPT', 'AI绘画', '写作助手', '视频生成', '编程助手'];
+const hotTagsMap = {
+  zh: ['ChatGPT', 'AI绘画', '写作助手', '视频生成', '编程助手'],
+  en: ['ChatGPT', 'AI Art', 'Writing', 'Video', 'Coding'],
+  hi: ['ChatGPT', 'AI कला', 'लेखन', 'वीडियो', 'कोडिंग'],
+  ko: ['ChatGPT', 'AI 아트', '글쓰기', '비디오', '코딩'],
+  ja: ['ChatGPT', 'AIアート', 'ライティング', 'ビデオ', 'コーディング'],
+};
 
 export default function Hero() {
+  const { t, locale } = useLanguage();
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -21,24 +29,26 @@ export default function Hero() {
     router.push(`/search?q=${encodeURIComponent(tag)}`);
   };
 
+  const hotTags = hotTagsMap[locale] || hotTagsMap['zh'];
+
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
           <Sparkles className="w-4 h-4" />
-          <span>收录 50+ 优质 AI 工具</span>
+          <span>50+ AI Tools</span>
         </div>
 
         {/* Title */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          发现最实用的
-          <span className="text-blue-600"> AI 工具</span>
+          {t('hero.title')}
+          <span className="text-blue-600"> {t('hero.titleHighlight')}</span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-          精选全球优质 AI 工具，帮你快速找到合适的 AI 助手，提升工作效率
+          {t('hero.subtitle')}
         </p>
 
         {/* Search Box */}
@@ -46,7 +56,7 @@ export default function Hero() {
           <div className="relative">
             <input
               type="text"
-              placeholder="搜索 AI 工具，如：ChatGPT、AI绘画..."
+              placeholder={t('hero.searchPlaceholder') as string}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full px-6 py-4 pl-14 pr-32 text-gray-900 bg-white border border-gray-200 rounded-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg"
@@ -56,14 +66,14 @@ export default function Hero() {
               type="submit"
               className="absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors font-medium"
             >
-              搜索
+              {t('nav.search')}
             </button>
           </div>
         </form>
 
         {/* Hot Tags */}
         <div className="flex flex-wrap items-center justify-center gap-2">
-          <span className="text-gray-500 text-sm">热门搜索：</span>
+          <span className="text-gray-500 text-sm">{t('hero.popularSearches')}：</span>
           {hotTags.map((tag) => (
             <button
               key={tag}

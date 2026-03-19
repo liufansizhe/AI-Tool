@@ -1,0 +1,83 @@
+{
+    "metadata": {
+        "title": "AI 도구함 - 최고의 AI 도구 발견",
+        "description": "AI 채팅, AI 아트, AI 글쓰기, AI 비디오, 코딩 도우미 등 전 세계 최고의 AI 도구를 엄선했습니다. 생산성을 높일 수 있는 올바른 AI 도우미를 찾아보세요."
+    },
+    "nav": {
+        "home": "홈",
+        "category": "카테고리",
+        "about": "소개",
+        "search": "검색",
+        "searchPlaceholder": "AI 도구 검색..."
+    },
+    "hero": {
+        "title": "최고의",
+        "titleHighlight": "AI 도구",
+        "subtitle": "생산성 향상을 위한 엄선된 AI 도구",
+        "searchPlaceholder": "AI 도구 검색...",
+        "popularSearches": "인기 검색",
+        "stats": {
+            "tools": "AI 도구",
+            "categories": "카테고리"
+        }
+    },
+    "categories": {
+        "title": "카테고리 탐색",
+        "all": "전체",
+        "chat": "AI 채팅",
+        "image": "AI 아트",
+        "writing": "AI 글쓰기",
+        "video": "AI 비디오",
+        "audio": "AI 오디오",
+        "code": "코딩",
+        "productivity": "생산성",
+        "design": "디자인"
+    },
+    "tools": {
+        "title": "인기 AI 도구",
+        "viewAll": "모두 보기",
+        "visit": "웹사이트 방문",
+        "viewDetails": "자세히 보기",
+        "featured": "추천",
+        "new": "신규",
+        "tags": {
+            "free": "무료",
+            "paid": "유료",
+            "freemium": "부분 무료"
+        },
+        "price": {
+            "free": "무료",
+            "freemium": "무료 체험",
+            "paid": "유료"
+        }
+    },
+    "toolDetail": {
+        "backToHome": "홈으로 돌아가기",
+        "toolIntro": "소개",
+        "tags": "태그",
+        "priceInfo": "가격",
+        "hasFree": "무료 버전 제공",
+        "noFree": "무료 버전 없음",
+        "hasPaid": "유료 플랜 제공",
+        "fullyFree": "완전 무료",
+        "visitWebsite": "웹사이트 방문"
+    },
+    "footer": {
+        "slogan": "AI 도구함",
+        "description": "생산성 향상을 위한 엄선된 AI 도구",
+        "links": {
+            "title": "빠른 링크",
+            "home": "홈",
+            "about": "소개",
+            "contact": "문의하기"
+        },
+        "categories": "카테고리 탐색",
+        "moreCategories": "더 많은 카테고리",
+        "copyright": "모든 권리 보유",
+        "disclaimer": "모든 도구 링크는 참조용입니다. 정확한 정보는 공식 웹사이트를 참조하세요."
+    },
+    "language": {
+        "title": "언어",
+        "switch": "언어 변경"
+    }
+}

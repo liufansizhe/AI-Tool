@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>封面图 - AI绘画对比</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1440px; overflow: hidden; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+
+  .card {
+    width: 1080px;
+    height: 1440px;
+    background: #0a0a0a;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* 背景艺术效果 */
+  .bg-art {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 50% at 20% 20%, rgba(236,72,153,0.2) 0%, transparent 60%),
+      radial-gradient(ellipse 80% 50% at 80% 80%, rgba(124,58,237,0.2) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 50% 50%, rgba(249,115,22,0.1) 0%, transparent 60%);
+  }
+
+  /* 顶部装饰条 */
+  .top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #ec4899, #a855f7, #f97316);
+  }
+
+  .content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 0 80px;
+  }
+
+  .tag {
+    display: inline-block;
+    background: rgba(236,72,153,0.15);
+    border: 1px solid rgba(236,72,153,0.4);
+    color: #f472b6;
+    font-size: 26px;
+    padding: 12px 36px;
+    border-radius: 8px;
+    letter-spacing: 3px;
+    margin-bottom: 48px;
+  }
+
+  .title {
+    font-size: 96px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .title .highlight {
+    background: linear-gradient(135deg, #ec4899, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .subtitle {
+    font-size: 38px;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 70px;
+    letter-spacing: 2px;
+  }
+
+  /* 工具对比卡片 */
+  .tools-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 64px;
+  }
+
+  .tool-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 28px 36px;
+  }
+
+  .rank {
+    font-size: 48px;
+    font-weight: 900;
+    width: 80px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .rank-1 { color: #fbbf24; }
+  .rank-2 { color: #94a3b8; }
+  .rank-3 { color: #cd7c2f; }
+
+  .tool-info { flex: 1; }
+  .tool-name { font-size: 40px; font-weight: 700; color: white; margin-bottom: 6px; }
+  .tool-desc { font-size: 26px; color: rgba(255,255,255,0.45); }
+
+  .tool-badge {
+    font-size: 24px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  .badge-free { background: rgba(34,197,94,0.15); color: #4ade80; border: 1px solid rgba(34,197,94,0.3); }
+  .badge-paid { background: rgba(249,115,22,0.15); color: #fb923c; border: 1px solid rgba(249,115,22,0.3); }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    margin-bottom: 48px;
+  }
+
+  .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .more-hint { font-size: 28px; color: rgba(255,255,255,0.4); }
+  .site { font-size: 28px; color: rgba(255,255,255,0.35); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg-art"></div>
+  <div class="top-bar"></div>
+
+  <div class="content">
+    <div class="tag">🎨 AI绘画工具测评</div>
+
+    <div class="title">
+      选对工具<br><span class="highlight">出图质量</span><br>差10倍
+    </div>
+    <div class="subtitle">6款AI绘画工具横向对比</div>
+
+    <div class="tools-list">
+      <div class="tool-row">
+        <div class="rank rank-1">🥇</div>
+        <div class="tool-info">
+          <div class="tool-name">Midjourney</div>
+          <div class="tool-desc">艺术风格最强，出图质量行业顶级</div>
+        </div>
+        <div class="tool-badge badge-paid">$10/月</div>
+      </div>
+      <div class="tool-row">
+        <div class="rank rank-2">🥈</div>
+        <div class="tool-info">
+          <div class="tool-name">LiblibAI</div>
+          <div class="tool-desc">国内最全模型站，免费额度多</div>
+        </div>
+        <div class="tool-badge badge-free">免费</div>
+      </div>
+      <div class="tool-row">
+        <div class="rank rank-3">🥉</div>
+        <div class="tool-info">
+          <div class="tool-name">通义万相</div>
+          <div class="tool-desc">阿里出品，中文理解最好</div>
+        </div>
+        <div class="tool-badge badge-free">免费</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="footer-row">
+      <div class="more-hint">还有3款工具详细对比 👉</div>
+      <div class="site">aibetter.top</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
