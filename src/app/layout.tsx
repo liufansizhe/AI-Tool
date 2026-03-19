@@ -1,16 +1,10 @@
 import type { Metadata } from 'next';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
-import { ConfigProvider } from 'antd';
-import { ThemeProvider } from '@/client/components/theme-provider';
-import { I18nProvider } from '@/client/components/i18n-provider';
-import zhCN from 'antd/locale/zh_CN';
-import enUS from 'antd/locale/en_US';
-import '@/styles/global.scss';
-import '@/styles/antd.scss';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Next.js 脚手架',
-  description: '支持多语言、主题切换和全局状态管理的 Next.js 项目',
+  title: 'AI工具箱 - 发现最实用的AI工具',
+  description: '精选全球优质AI工具，包括AI对话、AI绘画、AI写作、AI视频、编程助手等，帮你快速找到合适的AI助手，提升工作效率。',
+  keywords: 'AI工具, AI导航, ChatGPT, AI绘画, AI写作, 人工智能工具',
 };
 
 export default function RootLayout({
@@ -19,25 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh" suppressHydrationWarning>
-      <body>
-        <AntdRegistry>
-          <ThemeProvider>
-            <I18nProvider>
-              <ConfigProvider
-                locale={zhCN}
-                theme={{
-                  token: {
-                    colorPrimary: '#1677ff',
-                    borderRadius: 6,
-                  },
-                }}
-              >
-                {children}
-              </ConfigProvider>
-            </I18nProvider>
-          </ThemeProvider>
-        </AntdRegistry>
+    <html lang="zh-CN">
+      <body className="antialiased min-h-screen flex flex-col">
+        {children}
       </body>
     </html>
   );
