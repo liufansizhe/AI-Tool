@@ -1,7 +1,8 @@
 {
     "metadata": {
         "title": "AI Toolbox - Discover the Best AI Tools",
-        "description": "Curated collection of the world's best AI tools, including AI chat, AI art, AI writing, AI video, coding assistants, and more. Find the right AI assistant to boost your productivity."
+        "description": "Curated collection of the world's best AI tools, including AI chat, AI art, AI writing, AI video, coding assistants, and more. Find the right AI assistant to boost your productivity.",
+        "keywords": "AI tools, AI navigation, ChatGPT, AI art, AI writing, AI tools"
     },
     "nav": {
         "home": "Home",
@@ -11,6 +12,7 @@
         "searchPlaceholder": "Search AI tools..."
     },
     "hero": {
+        "badge": "50+ AI Tools",
         "title": "Discover the Best",
         "titleHighlight": "AI Tools",
         "subtitle": "Curated AI tools to boost your productivity",
@@ -25,13 +27,21 @@
         "title": "Browse Categories",
         "all": "All",
         "chat": "AI Chat",
+        "chatDesc": "ChatGPT-like chat tools including ChatGPT, Claude and other conversational models",
         "image": "AI Art",
+        "imageDesc": "Text-to-image and image-to-image tools including Midjourney, Stable Diffusion and other art models",
         "writing": "AI Writing",
+        "writingDesc": "Copywriting, article, and code generation tools to improve writing efficiency",
         "video": "AI Video",
+        "videoDesc": "Video generation and editing tools for creating and editing video content",
         "audio": "AI Audio",
+        "audioDesc": "Voice synthesis and music generation tools for creating audio and music content",
         "code": "Coding",
+        "codeDesc": "Code completion and AI programming assistants to improve development efficiency",
         "productivity": "Productivity",
-        "design": "Design"
+        "productivityDesc": "PPT, meeting, note-taking and other productivity tools",
+        "design": "Design",
+        "designDesc": "Image editing and design assistance tools"
     },
     "tools": {
         "title": "Popular AI Tools",
@@ -79,6 +89,63 @@
     "language": {
         "title": "Language",
         "switch": "Switch Language"
+    },
+    "about": {
+        "title": "About AI Toolbox",
+        "subtitle": "We are dedicated to helping users discover the most useful AI tools, so everyone can enjoy the convenience AI brings",
+        "mission": "Our Mission",
+        "missionDesc": "Help users quickly find the right AI tools to boost work and creative efficiency",
+        "audience": "Who We Serve",
+        "audienceDesc": "For all individuals and enterprise teams who want to use AI tools to improve efficiency",
+        "values": "Core Values",
+        "valuesDesc": "Curated quality tools, accurate information, and timely updates",
+        "whyUs": "Why Choose Us?",
+        "whyUsP1": "In the era of AI tool explosion, new AI products appear every day. Faced with a dizzying array of choices, many users feel confused: which tool suits me? Which one is better? Is it free?",
+        "whyUsP2": "AI Toolbox was created to solve these problems. We carefully select quality AI tools from around the world, organize them by category, and label pricing clearly, so you can quickly find the tool that suits you best.",
+        "whyUsP3": "Our goal is to become the most trusted AI tool navigation site, helping every user boost efficiency and unleash creativity in the AI era.",
+        "criteria": "Inclusion Criteria",
+        "criteria1": "Tools must be actually usable; we do not accept products that are only at the concept stage",
+        "criteria2": "Priority is given to tools with real user value and good reputation",
+        "criteria3": "Keep information updated and regularly verify tool status",
+        "criteria4": "Provide objective and accurate pricing and feature information",
+        "contact": "Contact Us",
+        "contactDesc": "Have any suggestions or collaboration intentions? Feel free to contact us"
+    },
+    "search": {
+        "title": "Search Results",
+        "resultFor": "search results for",
+        "foundCount": "Found {{count}} related tools",
+        "placeholder": "Please enter a search keyword",
+        "noResult": "No related tools found, try other keywords",
+        "startSearch": "Enter a keyword to start searching",
+        "loading": "Loading..."
+    },
+    "toolList": {
+        "empty": "No tools available",
+        "count": "{{count}} tools in total",
+        "featured": "Featured",
+        "all": "All Tools",
+        "categoryTools": "{{name}} Tools",
+        "categoryEmpty": "No tools in this category yet, stay tuned"
+    },
+    "priceInfo": {
+        "chatgpt": "¥59/month membership",
+        "cursor": "Free + Paid",
+        "stable-diffusion": "Free 150 credits daily",
+        "liblibai": "Free 25 images daily",
+        "github-copilot": "Free + Pro $8/month",
+        "chatglm": "Free 30 times/month",
+        "deepseek": "Free 10,000 characters/month",
+        "tongyiqianwen": "Free 10 credits daily",
+        "xiaofeng": "Free 100 points/month",
+        "copyai": "Free + Paid",
+        "suno": "Free + Paid",
+        "runway": "Free + Paid",
+        "heygen": "Free + Paid",
+        "perplexity": "Free + Paid",
+        "notion-ai": "Free + Paid",
+        "claude": "Free + Paid",
+        "kimi": "Free + Paid"
     },
     "toolsData": {
         "chatgpt": {
@@ -562,13 +629,13 @@
             ]
         },
         "mita": {
-            "description": "MiniMax's AI companion application",
-            "fullDescription": "Mita is an AI companion application launched by MiniMax, offering virtual character dialogue and emotional companionship.",
+            "description": "Domestic AI writing assistant, supports rewriting, continuation, and proofreading",
+            "fullDescription": "Mita Writing Cat is a domestic AI writing tool providing article rewriting, continuation, intelligent proofreading, and other features, especially suitable for Chinese writing scenarios.",
             "tags": [
                 "Domestic",
-                "MiniMax",
-                "Companion",
-                "Chat"
+                "Writing",
+                "Proofreading",
+                "Chinese"
             ]
         },
         "moyu": {
@@ -659,6 +726,228 @@
                 "Knowledge Base",
                 "Private",
                 "Documents"
+            ]
+        },
+        "wenxin": {
+            "description": "Baidu's knowledge-enhanced large language model",
+            "fullDescription": "Wenxin Yiyan is a knowledge-enhanced large language model developed by Baidu, capable of interactive dialogue, answering questions, and assisting creation, featuring knowledge enhancement, retrieval enhancement, and dialogue enhancement.",
+            "tags": [
+                "Domestic",
+                "Baidu",
+                "Chat",
+                "Chinese"
+            ]
+        },
+        "tongyi": {
+            "description": "Alibaba Cloud's large language model, rich enterprise applications",
+            "fullDescription": "Tongyi Qianwen is a large language model launched by Alibaba Cloud, supporting multi-turn dialogue, copywriting, logical reasoning, multimodal understanding, with rich enterprise application scenarios.",
+            "tags": [
+                "Domestic",
+                "Alibaba",
+                "Chat",
+                "Chinese"
+            ]
+        },
+        "zhipu": {
+            "description": "AI assistant by Zhipu AI with Tsinghua University background, strong technical capabilities",
+            "fullDescription": "Zhipu Qingyan is an AI assistant based on the ChatGLM large model, developed by the Zhipu AI team with Tsinghua University background, supporting multi-turn dialogue, text generation, and code writing.",
+            "tags": [
+                "Domestic",
+                "Tsinghua",
+                "Chat",
+                "Code"
+            ]
+        },
+        "gemini": {
+            "description": "Google's multimodal AI model, deeply integrated with the Google ecosystem",
+            "fullDescription": "Gemini is an AI model developed by Google DeepMind, supporting text, image, and audio multimodal processing, deeply integrated with Google Search, Gmail, and other services.",
+            "tags": [
+                "Google",
+                "Multimodal",
+                "Chat"
+            ]
+        },
+        "liblib": {
+            "description": "China's leading AI art platform with rich model resources",
+            "fullDescription": "LiblibAI is China's largest AI art model sharing platform, providing rich Stable Diffusion models, supporting online image generation and model downloads.",
+            "tags": [
+                "Domestic",
+                "Art",
+                "Models",
+                "Chinese"
+            ]
+        },
+        "tongyi-wanxiang": {
+            "description": "Alibaba Cloud's AI image generation model",
+            "fullDescription": "Tongyi Wanxiang is an AI image generation model launched by Alibaba Cloud, supporting text-to-image, image-to-image, and other features, with excellent Chinese text understanding.",
+            "tags": [
+                "Domestic",
+                "Alibaba",
+                "Art",
+                "Chinese"
+            ]
+        },
+        "xinghui": {
+            "description": "ByteDance's AI art tool",
+            "fullDescription": "Xinghui is an AI art product launched by ByteDance, supporting image generation in various styles, simple and easy to use.",
+            "tags": [
+                "Domestic",
+                "ByteDance",
+                "Art"
+            ]
+        },
+        "leonardo": {
+            "description": "Professional AI art tool for game asset generation",
+            "fullDescription": "Leonardo.AI focuses on game asset and creative content generation, providing various pre-trained models, suitable for game designers and concept artists.",
+            "tags": [
+                "Art",
+                "Game",
+                "Design"
+            ]
+        },
+        "ideogram": {
+            "description": "AI art tool excellent at generating text-embedded images",
+            "fullDescription": "Ideogram excels at generating images containing text, suitable for creating posters, logos, memes, and other designs that require text.",
+            "tags": [
+                "Art",
+                "Text Generation",
+                "Design"
+            ]
+        },
+        "grammarly": {
+            "description": "Intelligent writing assistant, grammar checking tool",
+            "fullDescription": "Grammarly is the most popular English writing assistant tool, providing grammar checking, spelling correction, style suggestions, and other features to help improve English writing quality.",
+            "tags": [
+                "Writing",
+                "Grammar",
+                "English"
+            ]
+        },
+        "keling": {
+            "description": "Kuaishou's AI video generation model",
+            "fullDescription": "Keling is a large AI video generation model launched by Kuaishou, supporting high-quality video generation and motion representation, outstanding among domestic video generation models.",
+            "tags": [
+                "Domestic",
+                "Video",
+                "Generation",
+                "Kuaishou"
+            ]
+        },
+        "sora": {
+            "description": "OpenAI's video generation model, stunning results",
+            "fullDescription": "Sora is a text-to-video model developed by OpenAI, capable of generating high-quality videos up to one minute long, with excellent motion consistency.",
+            "tags": [
+                "Video",
+                "Generation",
+                "OpenAI"
+            ]
+        },
+        "udio": {
+            "description": "High-quality AI music creation platform",
+            "fullDescription": "Udio is a professional AI music generation platform, supporting the creation of various music styles, with excellent music quality and emotional expression.",
+            "tags": [
+                "Audio",
+                "Music",
+                "Generation"
+            ]
+        },
+        "speechify": {
+            "description": "Text-to-speech reading tool",
+            "fullDescription": "Speechify is a powerful text-to-speech tool that supports converting articles, PDFs, books, and other content to audio, improving reading efficiency.",
+            "tags": [
+                "Audio",
+                "Reading",
+                "Productivity"
+            ]
+        },
+        "claude-artifacts": {
+            "description": "Claude's code generation and preview feature",
+            "fullDescription": "Claude Artifacts is an interactive code generation feature by Claude, supporting generation of React components, SVG, documents, and more with real-time preview.",
+            "tags": [
+                "Coding",
+                "Code Generation",
+                "Preview"
+            ]
+        },
+        "perplexity": {
+            "description": "AI search engine, powerful information retrieval tool",
+            "fullDescription": "Perplexity is an AI-powered search engine that understands questions and integrates answers from multiple sources, providing accurate answers with cited sources.",
+            "tags": [
+                "Search",
+                "Productivity",
+                "Research"
+            ]
+        },
+        "tome": {
+            "description": "AI storytelling and presentation tool",
+            "fullDescription": "Tome is an AI-powered storytelling tool that helps users quickly create engaging presentations and stories.",
+            "tags": [
+                "PPT",
+                "Storytelling",
+                "Presentation"
+            ]
+        },
+        "otter": {
+            "description": "AI meeting recording and transcription tool",
+            "fullDescription": "Otter.ai is an intelligent meeting assistant that can transcribe meeting content in real time, generate summaries, and extract action items to improve meeting efficiency.",
+            "tags": [
+                "Meeting",
+                "Transcription",
+                "Productivity"
+            ]
+        },
+        "fireflies": {
+            "description": "AI meeting assistant, automatic recording and analysis",
+            "fullDescription": "Fireflies is an AI meeting assistant that can automatically join meetings, record transcripts, generate summaries, and supports searching meeting content.",
+            "tags": [
+                "Meeting",
+                "Transcription",
+                "Analysis"
+            ]
+        },
+        "mem": {
+            "description": "AI-powered notes and knowledge management tool",
+            "fullDescription": "Mem.ai is an AI-native notes application, supporting automatic organization, smart search, and intelligent writing, helping build a personal knowledge base.",
+            "tags": [
+                "Notes",
+                "Knowledge Management",
+                "AI-Native"
+            ]
+        },
+        "remove-bg": {
+            "description": "One-click background removal tool",
+            "fullDescription": "Remove.bg is the most popular online background removal tool, using AI technology to remove image backgrounds with one click, with precise and fast results.",
+            "tags": [
+                "Image Processing",
+                "Background Removal",
+                "Design"
+            ]
+        },
+        "figma-ai": {
+            "description": "AI design features integrated in Figma",
+            "fullDescription": "Figma AI is the AI feature integrated in the Figma design tool, supporting automatic design generation, smart search, and content generation.",
+            "tags": [
+                "Design",
+                "UI/UX",
+                "Collaboration"
+            ]
+        },
+        "recraft": {
+            "description": "AI vector graphics and illustration generation tool",
+            "fullDescription": "Recraft is a professional AI design tool that supports generating vector graphics, illustrations, icons, and more, with output ready for commercial design use.",
+            "tags": [
+                "Design",
+                "Vector",
+                "Illustration"
+            ]
+        },
+        "magician": {
+            "description": "Figma's AI plugin, text to icons",
+            "fullDescription": "Magician is a Figma AI plugin that can convert text descriptions into icons and images, supporting multiple design styles.",
+            "tags": [
+                "Design",
+                "Figma Plugin",
+                "Icons"
             ]
         }
     }

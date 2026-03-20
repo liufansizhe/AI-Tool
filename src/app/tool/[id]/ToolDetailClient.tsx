@@ -15,7 +15,7 @@ interface ToolDetailClientProps {
 }
 
 export default function ToolDetailClient({ toolId }: ToolDetailClientProps) {
-  const { t } = useLanguage();
+  const { t, messages } = useLanguage();
   const tool = getToolById(toolId);
 
   if (!tool) {
@@ -33,10 +33,10 @@ export default function ToolDetailClient({ toolId }: ToolDetailClientProps) {
   const priceLabel = t(getPriceKey(tool.isFree, tool.hasPaidPlan));
   const priceClass = getPriceClass(tool.isFree, tool.hasPaidPlan);
 
-  // 获取工具名称的首字母作为图标
+  // Generate icon from tool name
   const initial = tool.name.charAt(0).toUpperCase();
 
-  // 生成一个基于工具名称的稳定颜色
+  // Generate stable color based on tool name
   const colors = [
     'bg-blue-500',
     'bg-green-500',
@@ -107,13 +107,13 @@ export default function ToolDetailClient({ toolId }: ToolDetailClientProps) {
                       href={`/category/${category.id}`}
                       className="text-gray-500 hover:text-blue-600 transition-colors"
                     >
-                      {category.name}
+                      {t(`categories.${category.id}`)}
                     </Link>
                   )}
                 </div>
 
-                {tool.priceInfo && (
-                  <p className="text-gray-600">{tool.priceInfo}</p>
+                {(messages as any).priceInfo?.[tool.id] && (
+                  <p className="text-gray-600">{(messages as any).priceInfo[tool.id]}</p>
                 )}
               </div>
 

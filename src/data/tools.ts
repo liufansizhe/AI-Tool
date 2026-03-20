@@ -1,7 +1,7 @@
 import { Tool } from "@/types";
 
 export const tools: Tool[] = [
-  // AI对话
+  // Chat Category
   {
     id: "chatgpt",
     name: "ChatGPT",
@@ -13,8 +13,7 @@ export const tools: Tool[] = [
     tags: ["对话", "写作", "编程", "英文"],
     isFree: true,
     hasPaidPlan: true,
-    priceInfo: "GPT-4 $20/月",
-    featured: true,
+      featured: true,
     order: 1,
   },
   {
@@ -28,7 +27,7 @@ export const tools: Tool[] = [
     tags: ["对话", "长文本", "代码", "文件分析"],
     isFree: true,
     hasPaidPlan: true,
-    priceInfo: "Pro $20/月",
+
     featured: true,
     order: 2,
   },
@@ -115,7 +114,7 @@ export const tools: Tool[] = [
     order: 8,
   },
 
-  // AI绘画
+  // Image Category
   {
     id: "midjourney",
     name: "Midjourney",
@@ -201,7 +200,7 @@ export const tools: Tool[] = [
     order: 6,
   },
 
-  // AI写作
+  // Writing Category
   {
     id: "copyai",
     name: "Copy.ai",
@@ -273,7 +272,7 @@ export const tools: Tool[] = [
     order: 5,
   },
 
-  // AI视频
+  // Video Category
   {
     id: "runway",
     name: "Runway",
@@ -363,7 +362,7 @@ export const tools: Tool[] = [
     order: 6,
   },
 
-  // AI音频
+  // Audio Category
   {
     id: "elevenlabs",
     name: "ElevenLabs",
@@ -422,7 +421,7 @@ export const tools: Tool[] = [
     priceInfo: "Premium $139/年",
     order: 4,
   },
-  // 编程助手
+  // Code Category
   {
     id: "github-copilot",
     name: "GitHub Copilot",
@@ -524,7 +523,7 @@ export const tools: Tool[] = [
     order: 7,
   },
 
-  // 效率工具
+  // Productivity Category
   {
     id: "perplexity",
     name: "Perplexity",
@@ -612,7 +611,7 @@ export const tools: Tool[] = [
     order: 6,
   },
 
-  // 设计工具
+  // Design Category
   {
     id: "remove-bg",
     name: "Remove.bg",

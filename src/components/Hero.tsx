@@ -5,12 +5,13 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useLanguage } from '@/i18n/LanguageProvider';
 
-const hotTagsMap = {
-  zh: ['ChatGPT', 'AI绘画', '写作助手', '视频生成', '编程助手'],
-  en: ['ChatGPT', 'AI Art', 'Writing', 'Video', 'Coding'],
-  hi: ['ChatGPT', 'AI कला', 'लेखन', 'वीडियो', 'कोडिंग'],
-  ko: ['ChatGPT', 'AI 아트', '글쓰기', '비디오', '코딩'],
-  ja: ['ChatGPT', 'AIアート', 'ライティング', 'ビデオ', 'コーディング'],
+// Hot tags for search - mapped from translation keys
+const hotTagsMap: Record<string, string[]> = {
+  zh: ['ChatGPT', 'ai绘画', '写作助手', '视频生成', '编程助手'],
+  en: ['ChatGPT', 'AI Art', 'Writing Assistant', 'Video Generation', 'Coding Assistant'],
+  hi: ['ChatGPT', 'AI कला', 'लेखन सहायक', 'वीडियो जनरेशन', 'कोडिंग सहायक'],
+  ko: ['ChatGPT', 'AI 아트', '글쓰기 도우미', '비디오 생성', '코딩 도우미'],
+  ja: ['ChatGPT', 'AIアート', 'ライティングアシスタント', 'ビデオ生成', 'コーディングアシスタント'],
 };
 
 export default function Hero() {
@@ -37,7 +38,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
           <Sparkles className="w-4 h-4" />
-          <span>50+ AI Tools</span>
+          <span>{t('hero.badge')}</span>
         </div>
 
         {/* Title */}

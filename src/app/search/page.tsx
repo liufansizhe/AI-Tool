@@ -8,11 +8,13 @@ import ToolList from '@/components/ToolList';
 import Footer from '@/components/Footer';
 import { searchTools } from '@/data/tools';
 import { Search } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageProvider';
 
 function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   const results = query ? searchTools(query) : [];
+  const { t } = useLanguage();
 
   return (
     <>
@@ -26,11 +28,11 @@ function SearchContent() {
                 <Search className="w-8 h-8 text-blue-600" />
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                搜索结果
+                {t('search.title')}
               </h1>
               {query && (
                 <p className="text-lg text-gray-600">
-                  &quot;<span className="font-semibold text-blue-600">{query}</span>&quot; 的搜索结果
+                  &quot;<span className="font-semibold text-blue-600">{query}</span>&quot; {t('search.resultFor')}
                 </p>
               )}
             </div>
@@ -41,9 +43,11 @@ function SearchContent() {
 
         <ToolList
           tools={results}
-          title={query ? `找到 ${results.length} 个相关工具` : '请输入搜索关键词'}
+          title={query
+            ? t('search.foundCount', { count: String(results.length) })
+            : t('search.placeholder')}
           showCount={false}
-          emptyMessage={query ? '没有找到相关工具，试试其他关键词吧' : '请输入搜索关键词开始搜索'}
+          emptyMessage={query ? t('search.noResult') : t('search.startSearch')}
         />
       </main>
       <Footer />
@@ -51,9 +55,17 @@ function SearchContent() {
   );
 }
 
+function SearchFallback() {
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+    </div>
+  );
+}
+
 export default function SearchPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">加载中...</div>}>
+    <Suspense fallback={<SearchFallback />}>
       <SearchContent />
     </Suspense>
   );

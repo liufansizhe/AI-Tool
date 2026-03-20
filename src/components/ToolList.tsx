@@ -1,19 +1,38 @@
+'use client';
+
 import { Tool } from '@/types';
 import ToolCard from './ToolCard';
+import { useLanguage } from '@/i18n/LanguageProvider';
 
 interface ToolListProps {
   tools: Tool[];
+  /** Direct title text, takes priority over titleKey */
   title?: string;
+  /** 翻译 key，用于从 messages 中获取标题 */
+  titleKey?: string;
+  /** 翻译 key 的插值参数 */
+  titleParams?: Record<string, string>;
   showCount?: boolean;
+  /** 直接显示的空状态文本，优先于 emptyKey */
   emptyMessage?: string;
+  /** 翻译 key，用于空状态文本 */
+  emptyKey?: string;
 }
 
 export default function ToolList({
   tools,
   title,
+  titleKey,
+  titleParams,
   showCount = true,
-  emptyMessage = '暂无相关工具',
+  emptyMessage,
+  emptyKey,
 }: ToolListProps) {
+  const { t } = useLanguage();
+
+  const resolvedTitle = title ?? (titleKey ? t(titleKey, titleParams) : undefined);
+  const resolvedEmpty = emptyMessage ?? (emptyKey ? t(emptyKey) : t('toolList.empty'));
+
   if (tools.length === 0) {
     return (
       <div className="text-center py-16">
@@ -32,7 +51,7 @@ export default function ToolList({
             />
           </svg>
         </div>
-        <p className="text-gray-500">{emptyMessage}</p>
+        <p className="text-gray-500">{resolvedEmpty}</p>
       </div>
     );
   }
@@ -40,11 +59,13 @@ export default function ToolList({
   return (
     <section className="py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {title && (
+        {resolvedTitle && (
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+            <h2 className="text-2xl font-bold text-gray-900">{resolvedTitle}</h2>
             {showCount && (
-              <span className="text-gray-500 text-sm">共 {tools.length} 个工具</span>
+              <span className="text-gray-500 text-sm">
+                {t('toolList.count', { count: String(tools.length) })}
+              </span>
             )}
           </div>
         )}

@@ -21,7 +21,7 @@ export default function Home() {
           <section className="py-12 bg-gradient-to-b from-white to-gray-50">
             <ToolList
               tools={featuredTools}
-              title="精选推荐"
+              titleKey="toolList.featured"
               showCount={false}
             />
           </section>
@@ -31,7 +31,7 @@ export default function Home() {
         <section className="py-12">
           <ToolList
             tools={allTools}
-            title="全部工具"
+            titleKey="toolList.all"
             showCount={true}
           />
         </section>

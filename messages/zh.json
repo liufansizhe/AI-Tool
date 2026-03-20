@@ -1,83 +1,954 @@
 {
-  "metadata": {
-    "title": "AI工具箱 - 发现最实用的AI工具",
-    "description": "精选全球优质AI工具，包括AI对话、AI绘画、AI写作、AI视频、编程助手等，帮你快速找到合适的AI助手，提升工作效率。"
-  },
-  "nav": {
-    "home": "首页",
-    "category": "分类",
-    "about": "关于",
-    "search": "搜索",
-    "searchPlaceholder": "搜索AI工具..."
-  },
-  "hero": {
-    "title": "发现最实用的",
-    "titleHighlight": "AI工具",
-    "subtitle": "精选全球优质AI工具，帮你提升工作效率",
-    "searchPlaceholder": "搜索你想找的AI工具...",
-    "popularSearches": "热门搜索",
-    "stats": {
-      "tools": "AI工具",
-      "categories": "分类"
-    }
-  },
-  "categories": {
-    "title": "浏览分类",
-    "all": "全部",
-    "chat": "AI对话",
-    "image": "AI绘画",
-    "writing": "AI写作",
-    "video": "AI视频",
-    "audio": "AI音频",
-    "code": "编程助手",
-    "productivity": "效率工具",
-    "design": "设计工具"
-  },
-  "tools": {
-    "title": "热门AI工具",
-    "viewAll": "查看全部",
-    "visit": "访问官网",
-    "viewDetails": "查看详情",
-    "featured": "精选",
-    "new": "新上线",
-    "tags": {
-      "free": "免费",
-      "paid": "付费",
-      "freemium": "部分免费"
+    "metadata": {
+        "title": "AI工具箱 - 发现最实用的AI工具",
+        "description": "精选全球优质AI工具，包括AI对话、AI绘画、AI写作、AI视频、编程助手等，帮你快速找到合适的AI助手，提升工作效率。",
+        "keywords": "AI工具, AI导航, ChatGPT, AI绘画, AI写作, 人工智能工具"
     },
-    "price": {
-      "free": "完全免费",
-      "freemium": "免费试用",
-      "paid": "付费"
-    }
-  },
-  "toolDetail": {
-    "backToHome": "返回首页",
-    "toolIntro": "工具简介",
-    "tags": "功能标签",
-    "priceInfo": "价格信息",
-    "hasFree": "提供免费版",
-    "noFree": "不提供免费版",
-    "hasPaid": "提供付费版",
-    "fullyFree": "完全免费",
-    "visitWebsite": "访问官网"
-  },
-  "footer": {
-    "slogan": "AI工具箱",
-    "description": "精选全球优质AI工具，帮你提升工作效率",
-    "links": {
-      "title": "快速链接",
-      "home": "首页",
-      "about": "关于我们",
-      "contact": "联系我们"
+    "nav": {
+        "home": "首页",
+        "category": "分类",
+        "about": "关于",
+        "search": "搜索",
+        "searchPlaceholder": "搜索AI工具..."
     },
-    "categories": "分类浏览",
-    "moreCategories": "更多分类",
-    "copyright": "版权所有",
-    "disclaimer": "本站所有工具链接仅供参考，请以各工具官网信息为准"
-  },
-  "language": {
-    "title": "语言",
-    "switch": "切换语言"
-  }
+    "hero": {
+        "badge": "50+ AI工具",
+        "title": "发现最好的",
+        "titleHighlight": "AI工具",
+        "subtitle": "精选AI工具，提升你的工作效率",
+        "searchPlaceholder": "搜索AI工具...",
+        "popularSearches": "热门搜索",
+        "stats": {
+            "tools": "AI工具",
+            "categories": "分类"
+        }
+    },
+    "categories": {
+        "title": "浏览分类",
+        "all": "全部",
+        "chat": "AI对话",
+        "chatDesc": "ChatGPT类对话工具，包括ChatGPT、Claude等对话模型",
+        "image": "AI绘画",
+        "imageDesc": "文生图、图生图工具，包括Midjourney、Stable Diffusion等绘画模型",
+        "writing": "AI写作",
+        "writingDesc": "文案、文章、代码生成工具，提高写作效率",
+        "video": "AI视频",
+        "videoDesc": "视频生成、剪辑工具，创建和编辑视频内容",
+        "audio": "AI音频",
+        "audioDesc": "语音合成、音乐生成，创建音频和音乐内容",
+        "code": "编程",
+        "codeDesc": "代码补全、AI编程助手，提高开发效率",
+        "productivity": "生产力",
+        "productivityDesc": "PPT、会议、笔记等效率工具",
+        "design": "设计",
+        "designDesc": "图片编辑、设计辅助工具"
+    },
+    "tools": {
+        "title": "热门AI工具",
+        "viewAll": "查看全部",
+        "visit": "访问网站",
+        "viewDetails": "查看详情",
+        "featured": "精选",
+        "new": "新品",
+        "tags": {
+            "free": "免费",
+            "paid": "付费",
+            "freemium": "免费增值"
+        },
+        "price": {
+            "free": "免费",
+            "freemium": "免费试用",
+            "paid": "付费"
+        }
+    },
+    "toolDetail": {
+        "backToHome": "返回首页",
+        "toolIntro": "关于",
+        "tags": "标签",
+        "priceInfo": "价格信息",
+        "hasFree": "有免费版本",
+        "noFree": "无免费版本",
+        "hasPaid": "有付费计划",
+        "fullyFree": "完全免费",
+        "visitWebsite": "访问网站"
+    },
+    "footer": {
+        "slogan": "AI工具箱",
+        "description": "精选AI工具，提升工作效率",
+        "links": {
+            "title": "快速链接",
+            "home": "首页",
+            "about": "关于我们",
+            "contact": "联系我们"
+        },
+        "categories": "浏览分类",
+        "moreCategories": "更多分类",
+        "copyright": "版权所有",
+        "disclaimer": "所有工具链接仅供参考，请以官方网站信息为准"
+    },
+    "language": {
+        "title": "语言",
+        "switch": "切换语言"
+    },
+    "about": {
+        "title": "关于AI工具箱",
+        "subtitle": "我们致力于帮助用户发现最实用的AI工具，让每个人都能享受AI带来的便利",
+        "mission": "我们的使命",
+        "missionDesc": "帮助用户快速找到合适的AI工具，提升工作和创作效率",
+        "audience": "我们服务谁",
+        "audienceDesc": "所有想要使用AI工具提高效率的个人和企业团队",
+        "values": "核心价值观",
+        "valuesDesc": "精选优质工具、提供准确信息、及时更新维护",
+        "whyUs": "为什么选择我们？",
+        "whyUsP1": "在AI工具爆炸的时代，每天都有新的AI产品出现。面对眼花缭乱的选择，很多用户感到困惑：哪个工具适合我？哪个更好？是否免费？",
+        "whyUsP2": "AI工具箱就是为了解决这些问题而创建的。我们从全球精心筛选优质AI工具，按类别组织，并清晰标注价格，让你能快速找到最适合你的工具。",
+        "whyUsP3": "我们的目标是成为最值得信赖的AI工具导航网站，帮助每一位用户在AI时代提升效率，释放创造力。",
+        "criteria": "收录标准",
+        "criteria1": "工具必须实际可用；我们不接受仅处于概念阶段的产品",
+        "criteria2": "优先选择具有真实用户价值且口碑良好的工具",
+        "criteria3": "保持信息更新，定期验证工具状态",
+        "criteria4": "提供客观准确的价格和功能信息",
+        "contact": "联系我们",
+        "contactDesc": "有任何建议或合作意向？欢迎联系我们"
+    },
+    "search": {
+        "title": "搜索结果",
+        "resultFor": "的搜索结果",
+        "foundCount": "找到{{count}}个相关工具",
+        "placeholder": "请输入搜索关键词",
+        "noResult": "未找到相关工具，请尝试其他关键词",
+        "startSearch": "输入关键词开始搜索",
+        "loading": "加载中..."
+    },
+    "toolList": {
+        "empty": "暂无相关工具",
+        "count": "共{{count}}个工具",
+        "featured": "精选推荐",
+        "all": "全部工具",
+        "categoryTools": "{{name}}工具",
+        "categoryEmpty": "该分类下暂无工具，敬请期待"
+    },
+    "priceInfo": {
+        "chatgpt": "会员¥59/月",
+        "cursor": "免费+付费",
+        "stable-diffusion": "免费每日150积分",
+        "liblibai": "免费每日25张",
+        "github-copilot": "免费+Pro $8/月",
+        "chatglm": "免费30次/月",
+        "deepseek": "免费1万字符/月",
+        "tongyiqianwen": "免费每日10积分",
+        "xiaofeng": "免费每月100积分",
+        "copyai": "免费+付费",
+        "suno": "免费+付费",
+        "runway": "免费+付费",
+        "heygen": "免费+付费",
+        "perplexity": "免费+付费",
+        "notion-ai": "免费+付费",
+        "claude": "免费+付费",
+        "kimi": "免费+付费"
+    },
+    "toolsData": {
+        "chatgpt": {
+            "description": "OpenAI的AI对话模型，功能强大，支持多轮对话",
+            "fullDescription": "ChatGPT是OpenAI开发的大型语言模型，能够进行自然语言对话、回答问题、协助写作、编程帮助等。支持GPT-3.5和GPT-4模型。",
+            "tags": [
+                "对话",
+                "写作",
+                "编程",
+                "英文"
+            ]
+        },
+        "claude": {
+            "description": "Anthropic的AI助手，擅长长文本处理和代码生成",
+            "fullDescription": "Claude是Anthropic开发的AI助手，以强大的推理能力和长文本处理能力著称。支持文件上传分析，具有优秀的代码编写能力。",
+            "tags": [
+                "对话",
+                "长文本",
+                "编程",
+                "文件分析"
+            ]
+        },
+        "kimi": {
+            "description": "月之暗面的旗舰产品，支持超长上下文，优秀的国产AI",
+            "fullDescription": "Kimi是月之暗面开发的国产大模型，支持200万字符超长上下文，擅长文档理解、摘要生成和多轮对话。",
+            "tags": [
+                "国产",
+                "长文本",
+                "对话",
+                "中文"
+            ]
+        },
+        "doubao": {
+            "description": "字节跳动的AI助手，免费流畅的使用体验",
+            "fullDescription": "豆包是字节跳动推出的AI助手，提供流畅的对话体验，支持多模态交互，完全免费。",
+            "tags": [
+                "国产",
+                "免费",
+                "多模态",
+                "字节跳动"
+            ]
+        },
+        "midjourney": {
+            "description": "行业领先的AI绘画工具，最适合艺术创作",
+            "fullDescription": "Midjourney是最受欢迎的AI绘画生成工具之一，以出色的艺术风格和细节表现著称。通过Discord生成高质量图像。",
+            "tags": [
+                "艺术",
+                "图像生成",
+                "设计",
+                "创意"
+            ]
+        },
+        "stable-diffusion": {
+            "description": "开源的AI绘画模型，免费且可定制",
+            "fullDescription": "Stable Diffusion是开源的AI图像生成模型，可以本地运行或云端部署，支持各种风格调整和微调模型。",
+            "tags": [
+                "开源",
+                "免费",
+                "本地",
+                "可定制"
+            ]
+        },
+        "github-copilot": {
+            "description": "GitHub的AI编程助手，提高编程效率",
+            "fullDescription": "GitHub Copilot是GitHub和OpenAI联合开发的AI编程助手，根据上下文提供代码建议、自动补全和代码生成功能。",
+            "tags": [
+                "编程",
+                "IDE",
+                "自动补全",
+                "GitHub"
+            ]
+        },
+        "cursor": {
+            "description": "AI原生代码编辑器，AI辅助编程",
+            "fullDescription": "Cursor是基于VS Code构建的AI原生代码编辑器，深度集成AI功能，支持代码生成、重构和智能问答。",
+            "tags": [
+                "编辑器",
+                "AI",
+                "编程",
+                "VS Code"
+            ]
+        },
+        "suno": {
+            "description": "AI音乐生成工具，根据文本创作歌曲",
+            "fullDescription": "Suno是AI音乐生成工具，可以根据文本描述创作包含歌词和旋律的完整歌曲，支持各种音乐风格。",
+            "tags": [
+                "音乐",
+                "音频",
+                "创意",
+                "AI"
+            ]
+        },
+        "runway": {
+            "description": "AI视频生成和编辑平台",
+            "fullDescription": "Runway是一个强大的AI视频创作平台，提供视频生成、编辑、特效等功能，是创作者的强大工具。",
+            "tags": [
+                "视频",
+                "编辑",
+                "生成",
+                "创意"
+            ]
+        },
+        "notion-ai": {
+            "description": "Notion的AI助手，提高写作效率",
+            "fullDescription": "Notion AI是内置在Notion中的AI功能，帮助用户写作、总结、翻译和头脑风暴，提升文档处理效率。",
+            "tags": [
+                "写作",
+                "笔记",
+                "生产力",
+                "AI"
+            ]
+        },
+        "gamma": {
+            "description": "AI PPT生成工具，创建精美演示文稿",
+            "fullDescription": "Gamma是AI演示文稿工具，可以根据文本描述生成精美幻灯片，支持实时协作和丰富的多媒体嵌入。",
+            "tags": [
+                "PPT",
+                "演示",
+                "设计",
+                "协作"
+            ]
+        },
+        "canva": {
+            "description": "在线设计工具，拥有丰富模板",
+            "fullDescription": "Canva是易用的在线设计平台，提供大量模板，适合社交媒体、演示文稿、海报等设计需求。",
+            "tags": [
+                "设计",
+                "模板",
+                "图形",
+                "简单"
+            ]
+        },
+        "removebg": {
+            "description": "AI背景去除工具，一键透明背景",
+            "fullDescription": "Remove.bg是专业的AI背景去除工具，能自动识别主体并移除背景，支持头发级别的细节处理。",
+            "tags": [
+                "图像",
+                "背景去除",
+                "设计",
+                "免费"
+            ]
+        },
+        "deepseek": {
+            "description": "深度求索的大语言模型，优秀的推理能力",
+            "fullDescription": "DeepSeek是深度求索开发的大语言模型，具有强大的推理和代码生成能力，完全免费使用。",
+            "tags": [
+                "国产",
+                "免费",
+                "推理",
+                "编程"
+            ]
+        },
+        "liblibai": {
+            "description": "国产AI绘画平台，丰富的模型库",
+            "fullDescription": "LiblibAI是国产AI绘画平台，拥有丰富的模型库，支持各种绘画风格，适合初学者和专业人士。",
+            "tags": [
+                "国产",
+                "艺术",
+                "模型",
+                "社区"
+            ]
+        },
+        "hailuoai": {
+            "description": "MiniMax的AI视频生成工具，自然的动作效果",
+            "fullDescription": "海螺AI是MiniMax推出的AI视频生成工具，具有自然的动作效果，适合短视频制作。",
+            "tags": [
+                "国产",
+                "视频",
+                "短视频",
+                "AI"
+            ]
+        },
+        "pika": {
+            "description": "AI视频生成工具，快速创建视频",
+            "fullDescription": "Pika是AI视频生成平台，可以根据文本或图像创建短视频，简单易用。",
+            "tags": [
+                "视频",
+                "生成",
+                "短视频",
+                "AI"
+            ]
+        },
+        "pixverse": {
+            "description": "AI视频生成平台，丰富的特效",
+            "fullDescription": "PixVerse是AI视频生成平台，提供各种视觉效果和风格选项，适合创意视频制作。",
+            "tags": [
+                "视频",
+                "特效",
+                "创意",
+                "AI"
+            ]
+        },
+        "luma": {
+            "description": "图像转AI 3D模型生成工具",
+            "fullDescription": "Luma AI是图像转3D模型的工具，使用神经辐射场技术创建高质量的3D资产。",
+            "tags": [
+                "3D",
+                "建模",
+                "AI",
+                "图像"
+            ]
+        },
+        "elevenlabs": {
+            "description": "专业AI语音合成工具",
+            "fullDescription": "ElevenLabs是专业AI语音合成平台，提供高质量的文本转语音服务，支持多种语言和声音克隆。",
+            "tags": [
+                "语音",
+                "TTS",
+                "音频",
+                "专业"
+            ]
+        },
+        "heygen": {
+            "description": "AI数字人视频生成平台",
+            "fullDescription": "HeyGen是AI数字人视频生成平台，可以根据文本创建虚拟主播视频，适合营销和教育场景。",
+            "tags": [
+                "数字人",
+                "视频",
+                "营销",
+                "AI"
+            ]
+        },
+        "chatglm": {
+            "description": "智谱AI的大模型，中英双语",
+            "fullDescription": "ChatGLM是智谱AI开发的大语言模型，支持中英双语对话，有开源版本可用。",
+            "tags": [
+                "国产",
+                "对话",
+                "双语",
+                "开源"
+            ]
+        },
+        "wenxinyiyan": {
+            "description": "百度的AI助手，强大的知识问答",
+            "fullDescription": "文心一言是百度推出的AI助手，基于文心大模型，擅长中文知识问答。",
+            "tags": [
+                "国产",
+                "百度",
+                "问答",
+                "中文"
+            ]
+        },
+        "tongyiqianwen": {
+            "description": "阿里巴巴的大模型，支持多场景应用",
+            "fullDescription": "通义千问是阿里巴巴推出的语言大模型，支持对话、写作、编程等各种应用场景。",
+            "tags": [
+                "国产",
+                "阿里巴巴",
+                "多模态",
+                "中文"
+            ]
+        },
+        "xinghuo": {
+            "description": "科大讯飞的AI助手，强大的中文能力",
+            "fullDescription": "星火是科大讯飞推出的AI助手，具有优秀的中文理解和语音交互能力。",
+            "tags": [
+                "国产",
+                "科大讯飞",
+                "语音",
+                "中文"
+            ]
+        },
+        "wanxiang": {
+            "description": "阿里巴巴的AI绘画工具，优秀的中文理解",
+            "fullDescription": "通义万像是阿里巴巴推出的AI绘画工具，拥有最佳的中文提示词理解，完全免费使用。",
+            "tags": [
+                "国产",
+                "艺术",
+                "阿里巴巴",
+                "免费"
+            ]
+        },
+        "jimeng": {
+            "description": "字节跳动的AI绘画工具，集成TikTok",
+            "fullDescription": "即梦是字节跳动推出的AI绘画和视频工具，与TikTok生态系统深度融合，支持各种创意风格。",
+            "tags": [
+                "国产",
+                "艺术",
+                "字节跳动",
+                "视频"
+            ]
+        },
+        "miaoying": {
+            "description": "美图秀秀的AI绘画工具，精美的风格",
+            "fullDescription": "妙影是美图秀秀推出的AI绘画工具，生成风格精美、体验流畅的精致图像。",
+            "tags": [
+                "国产",
+                "艺术",
+                "美图",
+                "精美"
+            ]
+        },
+        "cutout": {
+            "description": "PicUP.AI的AI绘画平台，功能丰富",
+            "fullDescription": "Cutout是PicUP.AI推出的专业AI绘画平台，提供各种绘画生成和图像处理功能。",
+            "tags": [
+                "国产",
+                "艺术",
+                "专业",
+                "图像"
+            ]
+        },
+        "copyai": {
+            "description": "AI文案工具，营销文案助手",
+            "fullDescription": "Copy.ai是专门为营销文案设计的AI写作工具，帮助用户快速生成广告文案、社交媒体内容等。",
+            "tags": [
+                "写作",
+                "营销",
+                "文案",
+                "英文"
+            ]
+        },
+        "jasper": {
+            "description": "专业AI写作工具，企业级",
+            "fullDescription": "Jasper是企业级AI写作平台，提供专业的内容生成和营销文案服务。",
+            "tags": [
+                "写作",
+                "企业",
+                "专业",
+                "营销"
+            ]
+        },
+        "writesonic": {
+            "description": "AI写作助手，SEO优化",
+            "fullDescription": "Writesonic是专注于SEO内容生成的AI写作工具，帮助用户创建搜索引擎优化的文章。",
+            "tags": [
+                "写作",
+                "SEO",
+                "文章",
+                "营销"
+            ]
+        },
+        "xiaofeng": {
+            "description": "科大讯飞的AI写作助手",
+            "fullDescription": "小风是科大讯飞推出的AI写作工具，专注于中文写作辅助，支持多种文档类型。",
+            "tags": [
+                "国产",
+                "写作",
+                "科大讯飞",
+                "中文"
+            ]
+        },
+        "wenshumaoxie": {
+            "description": "秘塔的AI写作工具，适合中文",
+            "fullDescription": "文鼠妙写是秘塔旗下的AI写作工具，提供中文写作辅助，支持润色、扩写和改写功能。",
+            "tags": [
+                "国产",
+                "写作",
+                "中文",
+                "润色"
+            ]
+        },
+        "yijian": {
+            "description": "一键AI的写作工具，简单易用",
+            "fullDescription": "一键AI写作是一键AI旗下的AI写作助手，提供各种写作模板和风格选择。",
+            "tags": [
+                "国产",
+                "写作",
+                "模板",
+                "简单"
+            ]
+        },
+        "aizhichi": {
+            "description": "AI论文写作工具，学术助手",
+            "fullDescription": "AI纸笔是专注于学术论文写作的AI工具，提供论文结构搭建、润色和格式化功能。",
+            "tags": [
+                "国产",
+                "学术",
+                "论文",
+                "写作"
+            ]
+        },
+        "tabnine": {
+            "description": "AI代码补全工具，支持多种语言",
+            "fullDescription": "Tabnine是支持各种IDE和编程语言的AI编程助手，提供智能代码补全功能。",
+            "tags": [
+                "编程",
+                "自动补全",
+                "多语言",
+                "IDE"
+            ]
+        },
+        "codeium": {
+            "description": "免费AI编程助手",
+            "fullDescription": "Codeium是完全免费的AI编程助手，提供代码补全、生成和解释功能。",
+            "tags": [
+                "编程",
+                "免费",
+                "自动补全",
+                "AI"
+            ]
+        },
+        "trae": {
+            "description": "字节跳动的免费AI编辑器，国产替代",
+            "fullDescription": "Trae是字节跳动推出的AI编程编辑器，完全免费，是Cursor的国产替代品。",
+            "tags": [
+                "国产",
+                "免费",
+                "编辑器",
+                "字节跳动"
+            ]
+        },
+        "marsCode": {
+            "description": "字节跳动的AI编程助手",
+            "fullDescription": "MarsCode是字节跳动推出的AI编程助手，支持代码补全、生成和解释功能。",
+            "tags": [
+                "国产",
+                "编程",
+                "字节跳动",
+                "AI"
+            ]
+        },
+        "codewhisperer": {
+            "description": "亚马逊的AI编程工具",
+            "fullDescription": "CodeWhisperer是亚马逊推出的AI编程助手，提供代码建议和安全扫描功能。",
+            "tags": [
+                "编程",
+                "亚马逊",
+                "安全",
+                "AI"
+            ]
+        },
+        "v0": {
+            "description": "Vercel的AI UI生成工具",
+            "fullDescription": "v0是Vercel推出的AI UI生成工具，能够根据文本描述生成React组件。",
+            "tags": [
+                "前端",
+                "React",
+                "UI",
+                "Vercel"
+            ]
+        },
+        "bolt": {
+            "description": "StackBlitz的AI编程工具，全栈生成",
+            "fullDescription": "Bolt.new是StackBlitz推出的AI编程工具，能够根据文本生成全栈应用。",
+            "tags": [
+                "全栈",
+                "生成",
+                "StackBlitz",
+                "AI"
+            ]
+        },
+        "loveshot": {
+            "description": "国产AI图像生成工具",
+            "fullDescription": "爱拍是国产AI图像生成平台，提供各种风格选项和微调模型。",
+            "tags": [
+                "国产",
+                "图像",
+                "艺术",
+                "模型"
+            ]
+        },
+        "mewxai": {
+            "description": "国产AI绘画工具，精美风格",
+            "fullDescription": "MewXAI是国产AI绘画平台，提供精致的绘画生成和图像处理功能。",
+            "tags": [
+                "国产",
+                "艺术",
+                "精美",
+                "图像"
+            ]
+        },
+        "qqny": {
+            "description": "腾讯的AI陪伴应用",
+            "fullDescription": "QQ小年年是腾讯推出的AI陪伴应用，提供虚拟角色对话和互动体验。",
+            "tags": [
+                "国产",
+                "腾讯",
+                "陪伴",
+                "对话"
+            ]
+        },
+        "tencent-yuanbao": {
+            "description": "腾讯的AI助手，强大的功能",
+            "fullDescription": "腾讯元宝是腾讯推出的AI助手，基于混元大模型，具有强大的中文对话能力。",
+            "tags": [
+                "国产",
+                "腾讯",
+                "对话",
+                "中文"
+            ]
+        },
+        "mita": {
+            "description": "国产AI写作助手，支持改写、续写、校对",
+            "fullDescription": "秘塔写作猫是国产AI写作工具，提供文章改写、续写、智能校对等功能，特别适合中文写作场景。",
+            "tags": [
+                "国产",
+                "写作",
+                "校对",
+                "中文"
+            ]
+        },
+        "moyu": {
+            "description": "INSCAPE的AI陪伴应用",
+            "fullDescription": "墨鱼是INSCAPE推出的AI陪伴应用，创建虚拟角色进行互动体验。",
+            "tags": [
+                "国产",
+                "INSCAPE",
+                "陪伴",
+                "对话"
+            ]
+        },
+        "flow": {
+            "description": "字节跳动的AI应用开发平台",
+            "fullDescription": "Coze（Flow）是字节跳动推出的AI应用开发平台，允许用户快速构建AI应用和机器人。",
+            "tags": [
+                "国产",
+                "字节跳动",
+                "开发",
+                "平台"
+            ]
+        },
+        "dify": {
+            "description": "开源LLM应用开发平台",
+            "fullDescription": "Dify是开源的LLM应用开发平台，支持快速构建AI应用和工作流。",
+            "tags": [
+                "开源",
+                "开发",
+                "LLM",
+                "平台"
+            ]
+        },
+        "fastgpt": {
+            "description": "开源AI知识库平台",
+            "fullDescription": "FastGPT是基于LLM的开源AI知识库平台，支持快速构建知识库问答系统。",
+            "tags": [
+                "开源",
+                "知识库",
+                "问答",
+                "LLM"
+            ]
+        },
+        "maxkb": {
+            "description": "开源知识库问答系统",
+            "fullDescription": "MaxKB是基于大模型的开源知识库问答系统，适合企业知识管理。",
+            "tags": [
+                "开源",
+                "知识库",
+                "企业",
+                "问答"
+            ]
+        },
+        "langchain": {
+            "description": "LLM应用开发框架",
+            "fullDescription": "LangChain是流行的LLM应用开发框架，提供丰富的工具和组件来构建AI应用。",
+            "tags": [
+                "框架",
+                "开发",
+                "LLM",
+                "开源"
+            ]
+        },
+        "ollama": {
+            "description": "本地大模型运行工具",
+            "fullDescription": "Ollama是用于本地运行大语言模型的工具，支持Llama、Mistral等各种开源模型。",
+            "tags": [
+                "本地",
+                "开源",
+                "LLM",
+                "自托管"
+            ]
+        },
+        "lmstudio": {
+            "description": "本地LLM运行和管理平台",
+            "fullDescription": "LM Studio是本地大语言模型管理和运行平台，提供用户友好的界面和丰富的功能。",
+            "tags": [
+                "本地",
+                "管理",
+                "LLM",
+                "GUI"
+            ]
+        },
+        "anythingllm": {
+            "description": "本地AI知识库应用",
+            "fullDescription": "AnythingLLM是本地AI知识库应用，可以根据本地文档构建私有知识库问答系统。",
+            "tags": [
+                "本地",
+                "知识库",
+                "私有",
+                "文档"
+            ]
+        },
+        "wenxin": {
+            "description": "百度推出的知识增强大语言模型",
+            "fullDescription": "文心一言是百度研发的知识增强大语言模型，能够与人对话互动，回答问题，协助创作，具备知识增强、检索增强和对话增强的技术特色。",
+            "tags": [
+                "国产",
+                "百度",
+                "对话",
+                "中文"
+            ]
+        },
+        "tongyi": {
+            "description": "阿里云推出的大语言模型，企业级应用丰富",
+            "fullDescription": "通义千问是阿里云推出的大语言模型，支持多轮对话、文案创作、逻辑推理、多模态理解等功能，企业级应用场景丰富。",
+            "tags": [
+                "国产",
+                "阿里",
+                "对话",
+                "中文"
+            ]
+        },
+        "zhipu": {
+            "description": "清华大学背景的智谱AI开发，技术实力强",
+            "fullDescription": "智谱清言是基于ChatGLM大模型开发的AI助手，由清华大学背景的智谱AI团队开发，支持多轮对话、文本生成、代码编写等功能。",
+            "tags": [
+                "国产",
+                "清华",
+                "对话",
+                "代码"
+            ]
+        },
+        "gemini": {
+            "description": "Google推出的多模态AI模型，与谷歌生态深度整合",
+            "fullDescription": "Gemini是Google DeepMind开发的AI模型，支持文本、图像、音频多模态处理，与Google搜索、Gmail等服务深度整合。",
+            "tags": [
+                "Google",
+                "多模态",
+                "对话"
+            ]
+        },
+        "liblib": {
+            "description": "国内领先的AI绘画平台，模型资源丰富",
+            "fullDescription": "LiblibAI是国内最大的AI绘画模型分享平台，提供丰富的Stable Diffusion模型，支持在线生图和模型下载。",
+            "tags": [
+                "国产",
+                "绘画",
+                "模型",
+                "中文"
+            ]
+        },
+        "tongyi-wanxiang": {
+            "description": "阿里云推出的AI绘画大模型",
+            "fullDescription": "通义万相是阿里云推出的AI绘画大模型，支持文生图、图生图等多种功能，在中文理解方面表现优秀。",
+            "tags": [
+                "国产",
+                "阿里",
+                "绘画",
+                "中文"
+            ]
+        },
+        "xinghui": {
+            "description": "字节跳动旗下的AI绘画工具",
+            "fullDescription": "星绘是字节跳动推出的AI绘画产品，支持多种风格的图片生成，操作简单易用。",
+            "tags": [
+                "国产",
+                "字节跳动",
+                "绘画"
+            ]
+        },
+        "leonardo": {
+            "description": "游戏资产生成的专业AI绘画工具",
+            "fullDescription": "Leonardo.AI专注于游戏资产和创意内容生成，提供多种训练好的模型，适合游戏设计师和概念艺术家。",
+            "tags": [
+                "绘画",
+                "游戏",
+                "设计"
+            ]
+        },
+        "ideogram": {
+            "description": "擅长生成带文字的AI绘画工具",
+            "fullDescription": "Ideogram在生成包含文字的图像方面表现出色，适合制作海报、Logo、表情包等需要文字的设计作品。",
+            "tags": [
+                "绘画",
+                "文字生成",
+                "设计"
+            ]
+        },
+        "grammarly": {
+            "description": "智能写作助手，语法检查神器",
+            "fullDescription": "Grammarly是最流行的英文写作辅助工具，提供语法检查、拼写纠正、风格建议等功能，帮助提升英文写作质量。",
+            "tags": [
+                "写作",
+                "语法",
+                "英文"
+            ]
+        },
+        "keling": {
+            "description": "快手推出的AI视频生成模型",
+            "fullDescription": "可灵是快手推出的AI视频生成大模型，支持高质量视频生成和运动表现，在国产视频生成模型中表现突出。",
+            "tags": [
+                "国产",
+                "视频",
+                "生成",
+                "快手"
+            ]
+        },
+        "sora": {
+            "description": "OpenAI的视频生成模型，效果惊艳",
+            "fullDescription": "Sora是OpenAI开发的文本生成视频模型，能够生成长达一分钟的高质量视频，在运动一致性方面表现出色。",
+            "tags": [
+                "视频",
+                "生成",
+                "OpenAI"
+            ]
+        },
+        "udio": {
+            "description": "高质量的AI音乐创作平台",
+            "fullDescription": "Udio是专业级AI音乐生成平台，支持多种音乐风格的创作，音乐质量和情感表达都很出色。",
+            "tags": [
+                "音频",
+                "音乐",
+                "生成"
+            ]
+        },
+        "speechify": {
+            "description": "文字转语音阅读工具",
+            "fullDescription": "Speechify是一款强大的文字转语音工具，支持将文章、PDF、书籍等转换为语音，提高阅读效率。",
+            "tags": [
+                "音频",
+                "阅读",
+                "效率"
+            ]
+        },
+        "claude-artifacts": {
+            "description": "Claude的代码生成和预览功能",
+            "fullDescription": "Claude Artifacts是Claude推出的交互式代码生成功能，支持生成React组件、SVG、文档等并实时预览。",
+            "tags": [
+                "编程",
+                "代码生成",
+                "预览"
+            ]
+        },
+        "perplexity": {
+            "description": "AI搜索引擎，信息获取神器",
+            "fullDescription": "Perplexity是AI驱动的搜索引擎，能够理解问题并从多个来源整合答案，提供带引用来源的准确回答。",
+            "tags": [
+                "搜索",
+                "效率",
+                "研究"
+            ]
+        },
+        "tome": {
+            "description": "AI故事叙述和演示工具",
+            "fullDescription": "Tome是AI驱动的故事叙述工具，帮助用户快速创建引人入胜的演示文稿和故事。",
+            "tags": [
+                "PPT",
+                "故事",
+                "演示"
+            ]
+        },
+        "otter": {
+            "description": "AI会议记录和转录工具",
+            "fullDescription": "Otter.ai是智能会议助手，能够实时转录会议内容、生成摘要、提取行动项，提高会议效率。",
+            "tags": [
+                "会议",
+                "转录",
+                "效率"
+            ]
+        },
+        "fireflies": {
+            "description": "AI会议助手，自动记录和分析",
+            "fullDescription": "Fireflies是AI会议助手，可以自动加入会议、记录转录、生成摘要，并支持搜索会议内容。",
+            "tags": [
+                "会议",
+                "转录",
+                "分析"
+            ]
+        },
+        "mem": {
+            "description": "AI驱动的笔记和知识管理工具",
+            "fullDescription": "Mem.ai是AI原生笔记应用，支持自动整理、智能搜索、智能写作等功能，帮助构建个人知识库。",
+            "tags": [
+                "笔记",
+                "知识管理",
+                "AI原生"
+            ]
+        },
+        "remove-bg": {
+            "description": "一键去除图片背景",
+            "fullDescription": "Remove.bg是最流行的在线抠图工具，利用AI技术一键去除图片背景，效果精准快速。",
+            "tags": [
+                "图片处理",
+                "抠图",
+                "设计"
+            ]
+        },
+        "figma-ai": {
+            "description": "Figma集成的AI设计功能",
+            "fullDescription": "Figma AI是Figma设计工具集成的AI功能，支持自动生成设计、智能搜索、内容生成等。",
+            "tags": [
+                "设计",
+                "UI/UX",
+                "协作"
+            ]
+        },
+        "recraft": {
+            "description": "AI矢量图形和插画生成工具",
+            "fullDescription": "Recraft是专业的AI设计工具，支持生成矢量图形、插画、图标等，输出可直接用于商业设计。",
+            "tags": [
+                "设计",
+                "矢量",
+                "插画"
+            ]
+        },
+        "magician": {
+            "description": "Figma的AI插件，文本到图标",
+            "fullDescription": "Magician是Figma的AI插件，可以将文本描述转换为图标、图片，支持多种设计风格。",
+            "tags": [
+                "设计",
+                "Figma插件",
+                "图标"
+            ]
+        }
+    }
 }

@@ -38,10 +38,10 @@ export default function ToolCard({ tool }: ToolCardProps) {
   const description = translation?.description || tool.description;
   const tags = translation?.tags || tool.tags;
 
-  // 获取工具名称的首字母作为图标
+  // Generate icon from tool name
   const initial = tool.name.charAt(0).toUpperCase();
 
-  // 生成一个基于工具名称的稳定颜色
+  // Generate stable color based on tool name
   const colors = [
     'bg-blue-500',
     'bg-green-500',
@@ -95,11 +95,11 @@ export default function ToolCard({ tool }: ToolCardProps) {
       </div>
 
       {/* Description */}
-      <p className="text-gray-600 text-sm mb-4 line-clamp-2">{tool.description}</p>
+      <p className="text-gray-600 text-sm mb-4 line-clamp-2">{description}</p>
 
       {/* Tags */}
       <div className="flex flex-wrap gap-1.5 mb-4">
-        {tool.tags.slice(0, 3).map((tag) => (
+        {tags.slice(0, 3).map((tag) => (
           <span
             key={tag}
             className="px-2 py-0.5 bg-gray-100 text-gray-600 rounded text-xs"
@@ -129,9 +129,9 @@ export default function ToolCard({ tool }: ToolCardProps) {
       </div>
 
       {/* Price Info */}
-      {tool.priceInfo && (
+      {(messages as any).priceInfo?.[tool.id] && (
         <p className="mt-3 text-xs text-gray-500 text-center">
-          {tool.priceInfo}
+          {(messages as any).priceInfo[tool.id]}
         </p>
       )}
     </div>

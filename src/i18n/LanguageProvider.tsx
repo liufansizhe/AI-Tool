@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { Locale, defaultLocale } from './config';
 
-// 静态导入所有语言文件
+// Static import all language files
 import zhMessages from '../../messages/zh.json';
 import enMessages from '../../messages/en.json';
 import hiMessages from '../../messages/hi.json';

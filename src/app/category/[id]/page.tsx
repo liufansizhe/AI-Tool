@@ -6,6 +6,8 @@ import ToolList from '@/components/ToolList';
 import Footer from '@/components/Footer';
 import { getCategoryById, getAllCategories } from '@/data/categories';
 import { getToolsByCategory } from '@/data/tools';
+import { useLanguage } from '@/i18n/LanguageProvider';
+import CategoryPageClient from './CategoryPageClient';
 
 interface CategoryPageProps {
   params: { id: string };
@@ -16,13 +18,27 @@ export function generateMetadata({ params }: CategoryPageProps): Metadata {
 
   if (!category) {
     return {
-      title: '分类未找到 - AI工具箱',
+      title: 'AI Toolbox',
     };
   }
 
+  // Fallback translations for static generation
+  const translations: Record<string, { title: string; description: string }> = {
+    chat: { title: 'AI Chat', description: 'ChatGPT-like chat tools including ChatGPT, Claude and other conversational models' },
+    image: { title: 'AI Art', description: 'Text-to-image and image-to-image tools including Midjourney, Stable Diffusion and other art models' },
+    writing: { title: 'AI Writing', description: 'Copywriting, article, and code generation tools to improve writing efficiency' },
+    video: { title: 'AI Video', description: 'Video generation and editing tools for creating and editing video content' },
+    audio: { title: 'AI Audio', description: 'Voice synthesis and music generation tools for creating audio and music content' },
+    code: { title: 'Coding', description: 'Code completion and AI programming assistants to improve development efficiency' },
+    productivity: { title: 'Productivity', description: 'PPT, meeting, note-taking and other productivity tools' },
+    design: { title: 'Design', description: 'Image editing and design assistance tools' },
+  };
+
+  const translation = translations[category.id] || { title: category.id, description: '' };
+
   return {
-    title: `${category.name} - AI工具箱`,
-    description: `发现最好的${category.name}，${category.description}`,
+    title: `${translation.title} - AI Toolbox`,
+    description: translation.description,
   };
 }
 
@@ -42,34 +58,5 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
   const tools = getToolsByCategory(params.id);
 
-  return (
-    <>
-      <Header />
-      <main className="flex-1">
-        {/* Category Header */}
-        <section className="bg-gradient-to-b from-blue-50 to-white py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                {category.name}
-              </h1>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                {category.description}
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <CategoryFilter currentCategory={params.id} />
-
-        <ToolList
-          tools={tools}
-          title={`${category.name}工具`}
-          showCount={true}
-          emptyMessage="该分类下暂无工具，敬请期待"
-        />
-      </main>
-      <Footer />
-    </>
-  );
+  return <CategoryPageClient category={category} tools={tools} params={params} />;
 }

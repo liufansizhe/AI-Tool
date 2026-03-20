@@ -1,7 +1,8 @@
 {
     "metadata": {
         "title": "AI टूलबॉक्स - सर्वश्रेष्ठ AI टूल खोजें",
-        "description": "AI चैट, AI कला, AI लेखन, AI वीडियो, कोडिंग सहायक और बहुत कुछ सहित दुनिया के सर्वश्रेष्ठ AI टूल का क्यूरेटेड संग्रह। अपनी उत्पादकता बढ़ाने के लिए सही AI सहायक खोजें।"
+        "description": "AI चैट, AI कला, AI लेखन, AI वीडियो, कोडिंग सहायक और बहुत कुछ सहित दुनिया के सर्वश्रेष्ठ AI टूल का क्यूरेटेड संग्रह। अपनी उत्पादकता बढ़ाने के लिए सही AI सहायक खोजें।",
+        "keywords": "AI टूल्स, AI नेविगेशन, ChatGPT, AI कला, AI लेखन, आर्टिफिशियल इंटेलिजेंस टूल्स"
     },
     "nav": {
         "home": "होम",
@@ -11,6 +12,7 @@
         "searchPlaceholder": "AI टूल खोजें..."
     },
     "hero": {
+        "badge": "50+ AI टूल",
         "title": "सर्वश्रेष्ठ खोजें",
         "titleHighlight": "AI टूल",
         "subtitle": "अपनी उत्पादकता बढ़ाने के लिए क्यूरेटेड AI टूल",
@@ -25,13 +27,21 @@
         "title": "श्रेणियां ब्राउज़ करें",
         "all": "सभी",
         "chat": "AI चैट",
+        "chatDesc": "ChatGPT जैसे चैट टूल, ChatGPT, Claude और अन्य बातचीत मॉडल",
         "image": "AI कला",
+        "imageDesc": "टेक्स्ट-टू-इमेज और इमेज-टू-इमेज टूल, Midjourney, Stable Diffusion और अन्य कला मॉडल",
         "writing": "AI लेखन",
+        "writingDesc": "कॉपीराइटिंग, लेखन, और कोड जेनरेशन टूल, लेखन दक्षता बढ़ाने के लिए",
         "video": "AI वीडियो",
+        "videoDesc": "वीडियो जेनरेशन और एडिटिंग टूल, वीडियो कंटेंट बनाने और एडिट करने के लिए",
         "audio": "AI ऑडियो",
+        "audioDesc": "वॉइस सिंथेसिस और म्यूजिक जेनरेशन टूल, ऑडियो और म्यूजिक कंटेंट बनाने के लिए",
         "code": "कोडिंग",
+        "codeDesc": "कोड कम्पलीशन और AI प्रोग्रामिंग असिस्टेंट, डेवलपमेंट दक्षता बढ़ाने के लिए",
         "productivity": "उत्पादकता",
-        "design": "डिजाइन"
+        "productivityDesc": "PPT, मीटिंग, नोट टेकिंग और अन्य उत्पादकता टूल",
+        "design": "डिजाइन",
+        "designDesc": "इमेज एडिटिंग और डिजाइन असिस्टेंस टूल"
     },
     "tools": {
         "title": "लोकप्रिय AI टूल",
@@ -79,5 +89,866 @@
     "language": {
         "title": "भाषा",
         "switch": "भाषा बदलें"
+    },
+    "about": {
+        "title": "AI टूलबॉक्स के बारे में",
+        "subtitle": "हम उपयोगकर्ताओं को सबसे उपयोगी AI टूल खोजने में मदद करने के लिए समर्पित हैं",
+        "mission": "हमारा मिशन",
+        "missionDesc": "उपयोगकर्ताओं को सही AI टूल जल्दी खोजने में मदद करना, काम और रचनात्मकता में सुधार करना",
+        "audience": "हम किसकी सेवा करते हैं",
+        "audienceDesc": "सभी व्यक्तियों और उद्यम टीमों के लिए जो AI टूल का उपयोग करके दक्षता में सुधार करना चाहते हैं",
+        "values": "मुख्य मूल्य",
+        "valuesDesc": "क्यूरेटेड गुणवत्ता टूल, सटीक जानकारी और समय पर अपडेट",
+        "whyUs": "हमें क्यों चुनें?",
+        "whyUsP1": "AI टूल के विस्फोट के युग में, हर दिन नए AI उत्पाद आते हैं। इतने विकल्पों के बीच, कई उपयोगकर्ता भ्रमित हो जाते हैं।",
+        "whyUsP2": "AI टूलबॉक्स इन समस्याओं को हल करने के लिए बनाया गया है। हम दुनिया भर के गुणवत्तापूर्ण AI टूल चुनते हैं।",
+        "whyUsP3": "हमारा लक्ष्य सबसे विश्वसनीय AI टूल नेविगेशन साइट बनना है।",
+        "criteria": "समावेश मानदंड",
+        "criteria1": "टूल वास्तव में उपयोग करने योग्य होने चाहिए",
+        "criteria2": "वास्तविक उपयोगकर्ता मूल्य वाले टूल को प्राथमिकता",
+        "criteria3": "जानकारी अपडेट रखें और नियमित रूप से टूल स्थिति सत्यापित करें",
+        "criteria4": "वस्तुनिष्ठ और सटीक मूल्य और सुविधा जानकारी प्रदान करें",
+        "contact": "संपर्क करें",
+        "contactDesc": "कोई सुझाव या सहयोग की इच्छा? हमसे संपर्क करें"
+    },
+    "search": {
+        "title": "खोज परिणाम",
+        "resultFor": "के लिए खोज परिणाम",
+        "foundCount": "{{count}} संबंधित टूल मिले",
+        "placeholder": "कृपया एक खोज कीवर्ड दर्ज करें",
+        "noResult": "कोई संबंधित टूल नहीं मिला, अन्य कीवर्ड आज़माएं",
+        "startSearch": "खोज शुरू करने के लिए एक कीवर्ड दर्ज करें",
+        "loading": "लोड हो रहा है..."
+    },
+    "toolList": {
+        "empty": "कोई टूल उपलब्ध नहीं",
+        "count": "कुल {{count}} टूल",
+        "featured": "विशेष",
+        "all": "सभी टूल",
+        "categoryTools": "{{name}} टूल",
+        "categoryEmpty": "इस श्रेणी में अभी कोई टूल नहीं है, जल्द आएगा"
+    },
+    "priceInfo": {
+        "chatgpt": "सदस्यता ¥59/महीने",
+        "cursor": "मुफ्त + पेड",
+        "stable-diffusion": "मुफ्त में प्रति दिन 150 क्रेडिट",
+        "liblibai": "मुफ्त में प्रति दिन 25 छवियां",
+        "github-copilot": "मुफ्त + Pro $8/महीने",
+        "chatglm": "मुफ्त में प्रति महीने 30 बार",
+        "deepseek": "मुफ्त में प्रति महीने 10,000 अक्षर",
+        "tongyiqianwen": "मुफ्त में प्रति दिन 10 क्रेडिट",
+        "xiaofeng": "मुफ्त में प्रति महीने 100 पॉइंट",
+        "copyai": "मुफ्त + पेड",
+        "suno": "मुफ्त + पेड",
+        "runway": "मुफ्त + पेड",
+        "heygen": "मुफ्त + पेड",
+        "perplexity": "मुफ्त + पेड",
+        "notion-ai": "मुफ्त + पेड",
+        "claude": "मुफ्त + पेड",
+        "kimi": "मुफ्त + पेड"
+    },
+    "toolsData": {
+        "chatgpt": {
+            "description": "OpenAI's AI chat model, powerful and supports multi-turn conversations",
+            "fullDescription": "ChatGPT is a large language model developed by OpenAI, capable of natural language conversations, answering questions, assisting with writing, programming help, and more. Supports GPT-3.5 and GPT-4 models.",
+            "tags": [
+                "Chat",
+                "Writing",
+                "Coding",
+                "English"
+            ]
+        },
+        "claude": {
+            "description": "Anthropic's AI assistant, excels at long text processing and code generation",
+            "fullDescription": "Claude is an AI assistant developed by Anthropic, known for its strong reasoning capabilities and long text processing. Supports file upload analysis and has strong code writing abilities.",
+            "tags": [
+                "Chat",
+                "Long Text",
+                "Coding",
+                "File Analysis"
+            ]
+        },
+        "kimi": {
+            "description": "Moonshot AI's flagship product, supports ultra-long context, excellent domestic AI",
+            "fullDescription": "Kimi is a domestic large model developed by Moonshot AI, supporting 2 million character超长上下文, excelling in document understanding, summary generation, and multi-turn conversations.",
+            "tags": [
+                "Domestic",
+                "Long Text",
+                "Chat",
+                "Chinese"
+            ]
+        },
+        "doubao": {
+            "description": "ByteDance's AI assistant, free and smooth experience",
+            "fullDescription": "Doubao is an AI assistant launched by ByteDance, offering a smooth dialogue experience, supporting multimodal interactions, and completely free.",
+            "tags": [
+                "Domestic",
+                "Free",
+                "Multimodal",
+                "ByteDance"
+            ]
+        },
+        "midjourney": {
+            "description": "Industry-leading AI art tool, best for artistic creation",
+            "fullDescription": "Midjourney is one of the most popular AI art generation tools, known for its excellent artistic style and detail representation. Generates high-quality images through Discord.",
+            "tags": [
+                "Art",
+                "Image Generation",
+                "Design",
+                "Creative"
+            ]
+        },
+        "stable-diffusion": {
+            "description": "Open source AI painting model, free and customizable",
+            "fullDescription": "Stable Diffusion is an open-source AI image generation model that can be run locally or in the cloud, supporting various style adjustments and fine-tuning models.",
+            "tags": [
+                "Open Source",
+                "Free",
+                "Local",
+                "Customizable"
+            ]
+        },
+        "github-copilot": {
+            "description": "GitHub's AI programming assistant, improves coding efficiency",
+            "fullDescription": "GitHub Copilot is an AI programming assistant developed by GitHub and OpenAI, providing code suggestions, autocomplete, and code generation based on context.",
+            "tags": [
+                "Coding",
+                "IDE",
+                "Autocomplete",
+                "GitHub"
+            ]
+        },
+        "cursor": {
+            "description": "AI-native code editor, AI-assisted programming",
+            "fullDescription": "Cursor is an AI-native code editor built on VS Code, deeply integrated with AI capabilities, supporting code generation, refactoring, and intelligent Q&A.",
+            "tags": [
+                "Editor",
+                "AI",
+                "Coding",
+                "VS Code"
+            ]
+        },
+        "suno": {
+            "description": "AI music generation tool, creates songs from text",
+            "fullDescription": "Suno is an AI music generation tool that can create complete songs with lyrics and melody from text descriptions, supporting various music styles.",
+            "tags": [
+                "Music",
+                "Audio",
+                "Creative",
+                "AI"
+            ]
+        },
+        "runway": {
+            "description": "AI video generation and editing platform",
+            "fullDescription": "Runway is a powerful AI video creation platform, offering video generation, editing, special effects, and other features, a powerful tool for creators.",
+            "tags": [
+                "Video",
+                "Editing",
+                "Generation",
+                "Creative"
+            ]
+        },
+        "notion-ai": {
+            "description": "Notion's AI assistant, improves writing efficiency",
+            "fullDescription": "Notion AI is the AI feature built into Notion, helping users write, summarize, translate, and brainstorm, enhancing document processing efficiency.",
+            "tags": [
+                "Writing",
+                "Notes",
+                "Productivity",
+                "AI"
+            ]
+        },
+        "gamma": {
+            "description": "AI PPT generation tool, creates beautiful presentations",
+            "fullDescription": "Gamma is an AI presentation tool that generates beautiful slides from text descriptions, supporting real-time collaboration and rich multimedia embedding.",
+            "tags": [
+                "PPT",
+                "Presentation",
+                "Design",
+                "Collaboration"
+            ]
+        },
+        "canva": {
+            "description": "Online design tool with rich templates",
+            "fullDescription": "Canva is an easy-to-use online design platform offering a large number of templates, suitable for social media, presentations, posters, and other design needs.",
+            "tags": [
+                "Design",
+                "Templates",
+                "Graphics",
+                "Easy"
+            ]
+        },
+        "removebg": {
+            "description": "AI background removal tool, one-click transparent background",
+            "fullDescription": "Remove.bg is a professional AI background removal tool that automatically identifies subjects and removes backgrounds, supporting hair-level detail processing.",
+            "tags": [
+                "Image",
+                "Background Removal",
+                "Design",
+                "Free"
+            ]
+        },
+        "deepseek": {
+            "description": "DeepSeek's large language model, excellent reasoning ability",
+            "fullDescription": "DeepSeek is a large language model developed by DeepSeek, with strong reasoning and code generation capabilities, completely free to use.",
+            "tags": [
+                "Domestic",
+                "Free",
+                "Reasoning",
+                "Code"
+            ]
+        },
+        "liblibai": {
+            "description": "Domestic AI art platform, rich model library",
+            "fullDescription": "LiblibAI is a domestic AI art platform with a rich model library, supporting various painting styles, suitable for beginners and professionals.",
+            "tags": [
+                "Domestic",
+                "Art",
+                "Models",
+                "Community"
+            ]
+        },
+        "hailuoai": {
+            "description": "MiniMax's AI video generation tool, natural motion",
+            "fullDescription": "HailuoAI is an AI video generation tool launched by MiniMax, featuring natural motion effects, suitable for short video creation.",
+            "tags": [
+                "Domestic",
+                "Video",
+                "Short Video",
+                "AI"
+            ]
+        },
+        "pika": {
+            "description": "AI video generation tool, fast video creation",
+            "fullDescription": "Pika is an AI video generation platform that can create short videos from text or images, simple and easy to use.",
+            "tags": [
+                "Video",
+                "Generation",
+                "Short Video",
+                "AI"
+            ]
+        },
+        "pixverse": {
+            "description": "AI video generation platform, rich effects",
+            "fullDescription": "PixVerse is an AI video generation platform offering various visual effects and style options, suitable for creative video production.",
+            "tags": [
+                "Video",
+                "Effects",
+                "Creative",
+                "AI"
+            ]
+        },
+        "luma": {
+            "description": "AI 3D model generation tool from images",
+            "fullDescription": "Luma AI is a tool that generates 3D models from images, using Neural Radiance Fields technology to create high-quality 3D assets.",
+            "tags": [
+                "3D",
+                "Modeling",
+                "AI",
+                "Images"
+            ]
+        },
+        "elevenlabs": {
+            "description": "Professional AI voice synthesis tool",
+            "fullDescription": "ElevenLabs is a professional AI voice synthesis platform offering high-quality text-to-speech services, supporting multiple languages and voice cloning.",
+            "tags": [
+                "Voice",
+                "TTS",
+                "Audio",
+                "Professional"
+            ]
+        },
+        "heygen": {
+            "description": "AI digital human video generation platform",
+            "fullDescription": "HeyGen is an AI digital human video generation platform that can create videos with virtual hosts from text, suitable for marketing and education.",
+            "tags": [
+                "Digital Human",
+                "Video",
+                "Marketing",
+                "AI"
+            ]
+        },
+        "chatglm": {
+            "description": "Zhipu AI's large model, bilingual in Chinese and English",
+            "fullDescription": "ChatGLM is a large language model developed by Zhipu AI, supporting Chinese and English dialogue, with open-source versions available.",
+            "tags": [
+                "Domestic",
+                "Chat",
+                "Bilingual",
+                "Open Source"
+            ]
+        },
+        "wenxinyiyan": {
+            "description": "Baidu's AI assistant, powerful knowledge Q&A",
+            "fullDescription": "Wenxin Yiyan is an AI assistant launched by Baidu, based on the Wenxin large model, excelling in Chinese knowledge Q&A.",
+            "tags": [
+                "Domestic",
+                "Baidu",
+                "Q&A",
+                "Chinese"
+            ]
+        },
+        "tongyiqianwen": {
+            "description": "Alibaba's large model, supports multiple scenarios",
+            "fullDescription": "Tongyi Qianwen is a large language model launched by Alibaba, supporting various application scenarios such as dialogue, writing, and programming.",
+            "tags": [
+                "Domestic",
+                "Alibaba",
+                "Multimodal",
+                "Chinese"
+            ]
+        },
+        "xinghuo": {
+            "description": "iFlytek's AI assistant, strong Chinese capabilities",
+            "fullDescription": "Xinghuo is an AI assistant launched by iFlytek, with strong Chinese language understanding and voice interaction capabilities.",
+            "tags": [
+                "Domestic",
+                "iFlytek",
+                "Voice",
+                "Chinese"
+            ]
+        },
+        "wanxiang": {
+            "description": "Alibaba's AI art tool, excellent Chinese understanding",
+            "fullDescription": "Tongyi Wanxiang is an AI art tool launched by Alibaba, with the best Chinese prompt understanding and completely free to use.",
+            "tags": [
+                "Domestic",
+                "Art",
+                "Alibaba",
+                "Free"
+            ]
+        },
+        "jimeng": {
+            "description": "ByteDance's AI art tool, integrated with TikTok",
+            "fullDescription": "Jimeng is an AI art and video tool launched by ByteDance, deeply integrated with the TikTok ecosystem, supporting various creative styles.",
+            "tags": [
+                "Domestic",
+                "Art",
+                "ByteDance",
+                "Video"
+            ]
+        },
+        "miaoying": {
+            "description": "Meitu's AI art tool, beautiful style",
+            "fullDescription": "Miaoying is an AI art tool launched by Meitu, generating exquisite images with beautiful style and smooth experience.",
+            "tags": [
+                "Domestic",
+                "Art",
+                "Meitu",
+                "Beautiful"
+            ]
+        },
+        "cutout": {
+            "description": "PicUP.AI's AI art platform, rich features",
+            "fullDescription": "Cutout is a professional AI art platform launched by PicUP.AI, offering various art generation and image processing functions.",
+            "tags": [
+                "Domestic",
+                "Art",
+                "Professional",
+                "Images"
+            ]
+        },
+        "copyai": {
+            "description": "AI copywriting tool, marketing copywriting assistant",
+            "fullDescription": "Copy.ai is an AI writing tool specifically designed for marketing copywriting, helping users quickly generate advertising copy, social media content, etc.",
+            "tags": [
+                "Writing",
+                "Marketing",
+                "Copywriting",
+                "English"
+            ]
+        },
+        "jasper": {
+            "description": "Professional AI writing tool, enterprise-grade",
+            "fullDescription": "Jasper is an enterprise-grade AI writing platform offering professional content generation and marketing copywriting services.",
+            "tags": [
+                "Writing",
+                "Enterprise",
+                "Professional",
+                "Marketing"
+            ]
+        },
+        "writesonic": {
+            "description": "AI writing assistant, SEO optimization",
+            "fullDescription": "Writesonic is an AI writing tool focused on SEO content generation, helping users create search-engine-optimized articles.",
+            "tags": [
+                "Writing",
+                "SEO",
+                "Articles",
+                "Marketing"
+            ]
+        },
+        "xiaofeng": {
+            "description": "iFlytek's AI writing assistant",
+            "fullDescription": "Xiaofeng is an AI writing tool launched by iFlytek, specializing in Chinese writing assistance, supporting multiple document types.",
+            "tags": [
+                "Domestic",
+                "Writing",
+                "iFlytek",
+                "Chinese"
+            ]
+        },
+        "wenshumaoxie": {
+            "description": "Secretary's AI writing tool, suitable for Chinese",
+            "fullDescription": "Wenshu Maoxie is an AI writing tool under Secretary, offering Chinese writing assistance, supporting polishing, expansion, and rewriting functions.",
+            "tags": [
+                "Domestic",
+                "Writing",
+                "Chinese",
+                "Polishing"
+            ]
+        },
+        "yijian": {
+            "description": "YiJian AI's writing tool, easy to use",
+            "fullDescription": "Yijian AI Writing is an AI writing assistant under YiJian AI, offering various writing templates and style options.",
+            "tags": [
+                "Domestic",
+                "Writing",
+                "Templates",
+                "Easy"
+            ]
+        },
+        "aizhichi": {
+            "description": "AI paper writing tool, academic assistant",
+            "fullDescription": "AI Zhichi is an AI tool focused on academic paper writing, offering paper structuring, polishing, and formatting functions.",
+            "tags": [
+                "Domestic",
+                "Academic",
+                "Paper",
+                "Writing"
+            ]
+        },
+        "tabnine": {
+            "description": "AI code completion tool, supports multiple languages",
+            "fullDescription": "Tabnine is an AI programming assistant supporting various IDEs and programming languages, offering intelligent code completion.",
+            "tags": [
+                "Coding",
+                "Autocomplete",
+                "Multi-language",
+                "IDE"
+            ]
+        },
+        "codeium": {
+            "description": "Free AI programming assistant",
+            "fullDescription": "Codeium is a completely free AI programming assistant, offering code completion, generation, and explanation functions.",
+            "tags": [
+                "Coding",
+                "Free",
+                "Autocomplete",
+                "AI"
+            ]
+        },
+        "trae": {
+            "description": "ByteDance's free AI editor, domestic alternative",
+            "fullDescription": "Trae is an AI programming editor launched by ByteDance, completely free, a domestic alternative to Cursor.",
+            "tags": [
+                "Domestic",
+                "Free",
+                "Editor",
+                "ByteDance"
+            ]
+        },
+        "marsCode": {
+            "description": "ByteDance's AI programming assistant",
+            "fullDescription": "MarsCode is an AI programming assistant launched by ByteDance, supporting code completion, generation, and explanation functions.",
+            "tags": [
+                "Domestic",
+                "Coding",
+                "ByteDance",
+                "AI"
+            ]
+        },
+        "codewhisperer": {
+            "description": "Amazon's AI programming tool",
+            "fullDescription": "CodeWhisperer is an AI programming assistant launched by Amazon, offering code suggestions and security scanning.",
+            "tags": [
+                "Coding",
+                "Amazon",
+                "Security",
+                "AI"
+            ]
+        },
+        "v0": {
+            "description": "Vercel's AI UI generation tool",
+            "fullDescription": "v0 is an AI UI generation tool launched by Vercel, capable of generating React components from text descriptions.",
+            "tags": [
+                "Frontend",
+                "React",
+                "UI",
+                "Vercel"
+            ]
+        },
+        "bolt": {
+            "description": "StackBlitz's AI programming tool, full-stack generation",
+            "fullDescription": "Bolt.new is an AI programming tool launched by StackBlitz, capable of generating full-stack applications from text.",
+            "tags": [
+                "Full Stack",
+                "Generation",
+                "StackBlitz",
+                "AI"
+            ]
+        },
+        "loveshot": {
+            "description": "Domestic AI image generation tool",
+            "fullDescription": "Loveshot is a domestic AI image generation platform, offering various style options and fine-tuning models.",
+            "tags": [
+                "Domestic",
+                "Images",
+                "Art",
+                "Models"
+            ]
+        },
+        "mewxai": {
+            "description": "Domestic AI art tool, beautiful style",
+            "fullDescription": "MewXAI is a domestic AI art platform, offering exquisite art generation and image processing functions.",
+            "tags": [
+                "Domestic",
+                "Art",
+                "Beautiful",
+                "Images"
+            ]
+        },
+        "qqny": {
+            "description": "Tencent's AI companion application",
+            "fullDescription": "QQNY is an AI companion application launched by Tencent, offering virtual character dialogue and interactive experiences.",
+            "tags": [
+                "Domestic",
+                "Tencent",
+                "Companion",
+                "Chat"
+            ]
+        },
+        "tencent-yuanbao": {
+            "description": "Tencent's AI assistant, powerful capabilities",
+            "fullDescription": "Tencent Yuanbao is an AI assistant launched by Tencent, based on the Hunyuan large model, with strong Chinese dialogue capabilities.",
+            "tags": [
+                "Domestic",
+                "Tencent",
+                "Chat",
+                "Chinese"
+            ]
+        },
+        "mita": {
+            "description": "घरेलू AI लेखन सहायक, पुनर्लेखन, जारी लेखन और प्रूफरीडिंग का समर्थन",
+            "fullDescription": "मीता राइटिंग कैट एक घरेलू AI लेखन उपकरण है जो लेख पुनर्लेखन, जारी लेखन, बुद्धिमान प्रूफरीडिंग आदि सुविधाएं प्रदान करता है, विशेष रूप से चीनी लेखन परिदृश्यों के लिए उपयुक्त।",
+            "tags": [
+                "घरेलू",
+                "लेखन",
+                "प्रूफरीडिंग",
+                "चीनी"
+            ]
+        },
+        "moyu": {
+            "description": "INSCAPE's AI companion application",
+            "fullDescription": "Moyu is an AI companion application launched by INSCAPE, creating virtual characters for interactive experiences.",
+            "tags": [
+                "Domestic",
+                "INSCAPE",
+                "Companion",
+                "Chat"
+            ]
+        },
+        "flow": {
+            "description": "ByteDance's AI application development platform",
+            "fullDescription": "Coze (Flow) is an AI application development platform launched by ByteDance, allowing users to quickly build AI applications and bots.",
+            "tags": [
+                "Domestic",
+                "ByteDance",
+                "Development",
+                "Platform"
+            ]
+        },
+        "dify": {
+            "description": "Open source LLM application development platform",
+            "fullDescription": "Dify is an open-source LLM application development platform, supporting rapid construction of AI applications and workflows.",
+            "tags": [
+                "Open Source",
+                "Development",
+                "LLM",
+                "Platform"
+            ]
+        },
+        "fastgpt": {
+            "description": "Open source AI knowledge base platform",
+            "fullDescription": "FastGPT is an open-source AI knowledge base platform based on LLM, supporting rapid construction of knowledge base Q&A systems.",
+            "tags": [
+                "Open Source",
+                "Knowledge Base",
+                "Q&A",
+                "LLM"
+            ]
+        },
+        "maxkb": {
+            "description": "Open source knowledge base Q&A system",
+            "fullDescription": "MaxKB is an open-source knowledge base Q&A system based on large models, suitable for enterprise knowledge management.",
+            "tags": [
+                "Open Source",
+                "Knowledge Base",
+                "Enterprise",
+                "Q&A"
+            ]
+        },
+        "langchain": {
+            "description": "LLM application development framework",
+            "fullDescription": "LangChain is a popular LLM application development framework, offering rich tools and components for building AI applications.",
+            "tags": [
+                "Framework",
+                "Development",
+                "LLM",
+                "Open Source"
+            ]
+        },
+        "ollama": {
+            "description": "Local large model running tool",
+            "fullDescription": "Ollama is a tool for running large language models locally, supporting various open-source models like Llama, Mistral, etc.",
+            "tags": [
+                "Local",
+                "Open Source",
+                "LLM",
+                "Self-hosted"
+            ]
+        },
+        "lmstudio": {
+            "description": "Local LLM running and management platform",
+            "fullDescription": "LM Studio is a local large language model management and running platform, offering a user-friendly interface and rich features.",
+            "tags": [
+                "Local",
+                "Management",
+                "LLM",
+                "GUI"
+            ]
+        },
+        "anythingllm": {
+            "description": "Local AI knowledge base application",
+            "fullDescription": "AnythingLLM is a local AI knowledge base application that can build private knowledge base Q&A systems based on local documents.",
+            "tags": [
+                "Local",
+                "Knowledge Base",
+                "Private",
+                "Documents"
+            ]
+        },
+        "wenxin": {
+            "description": "बैदू का ज्ञान-संवर्धित बड़ा भाषा मॉडल",
+            "fullDescription": "वेनक्सिन यियान बैदू द्वारा विकसित ज्ञान-संवर्धित बड़ा भाषा मॉडल है, जो संवाद, प्रश्नोत्तर और सहायक सृजन में सक्षम है।",
+            "tags": [
+                "घरेलू",
+                "बैदू",
+                "चैट",
+                "चीनी"
+            ]
+        },
+        "tongyi": {
+            "description": "अलीबाबा क्लाउड का बड़ा भाषा मॉडल, समृद्ध उद्यम अनुप्रयोग",
+            "fullDescription": "तोंग्यी चियानवेन अलीबाबा क्लाउड द्वारा लॉन्च किया गया बड़ा भाषा मॉडल है, जो मल्टी-टर्न संवाद, कॉपीराइटिंग, तर्क, मल्टीमोडल समझ आदि का समर्थन करता है।",
+            "tags": [
+                "घरेलू",
+                "अलीबाबा",
+                "चैट",
+                "चीनी"
+            ]
+        },
+        "zhipu": {
+            "description": "त्सिंगहुआ विश्वविद्यालय पृष्ठभूमि वाले झिपू AI द्वारा विकसित",
+            "fullDescription": "झिपू चिंगयान ChatGLM बड़े मॉडल पर आधारित AI सहायक है, जो त्सिंगहुआ विश्वविद्यालय पृष्ठभूमि वाली झिपू AI टीम द्वारा विकसित किया गया है।",
+            "tags": [
+                "घरेलू",
+                "त्सिंगहुआ",
+                "चैट",
+                "कोड"
+            ]
+        },
+        "gemini": {
+            "description": "Google का मल्टीमोडल AI मॉडल, Google इकोसिस्टम के साथ गहरा एकीकरण",
+            "fullDescription": "Gemini Google DeepMind द्वारा विकसित AI मॉडल है, जो टेक्स्ट, इमेज और ऑडियो मल्टीमोडल प्रसंस्करण का समर्थन करता है और Google Search, Gmail आदि के साथ गहराई से एकीकृत है।",
+            "tags": [
+                "Google",
+                "मल्टीमोडल",
+                "चैट"
+            ]
+        },
+        "liblib": {
+            "description": "चीन का प्रमुख AI आर्ट प्लेटफॉर्म, समृद्ध मॉडल संसाधन",
+            "fullDescription": "LiblibAI चीन का सबसे बड़ा AI आर्ट मॉडल शेयरिंग प्लेटफॉर्म है, जो समृद्ध Stable Diffusion मॉडल प्रदान करता है और ऑनलाइन इमेज जनरेशन और मॉडल डाउनलोड का समर्थन करता है।",
+            "tags": [
+                "घरेलू",
+                "आर्ट",
+                "मॉडल",
+                "चीनी"
+            ]
+        },
+        "tongyi-wanxiang": {
+            "description": "अलीबाबा क्लाउड का AI इमेज जनरेशन मॉडल",
+            "fullDescription": "तोंग्यी वानक्सियांग अलीबाबा क्लाउड द्वारा लॉन्च किया गया AI इमेज जनरेशन मॉडल है, जो टेक्स्ट-टू-इमेज, इमेज-टू-इमेज आदि का समर्थन करता है।",
+            "tags": [
+                "घरेलू",
+                "अलीबाबा",
+                "आर्ट",
+                "चीनी"
+            ]
+        },
+        "xinghui": {
+            "description": "ByteDance का AI इमेज जनरेशन टूल",
+            "fullDescription": "शिंगहुई ByteDance द्वारा लॉन्च किया गया AI पेंटिंग उत्पाद है, जो विभिन्न शैलियों में इमेज जनरेशन का समर्थन करता है और उपयोग में आसान है।",
+            "tags": [
+                "घरेलू",
+                "ByteDance",
+                "आर्ट"
+            ]
+        },
+        "leonardo": {
+            "description": "गेम एसेट जनरेशन के लिए पेशेवर AI आर्ट टूल",
+            "fullDescription": "Leonardo.AI गेम एसेट और क्रिएटिव कंटेंट जनरेशन पर केंद्रित है, जो विभिन्न पूर्व-प्रशिक्षित मॉडल प्रदान करता है, गेम डिजाइनर और कॉन्सेप्ट आर्टिस्ट के लिए उपयुक्त।",
+            "tags": [
+                "आर्ट",
+                "गेम",
+                "डिज़ाइन"
+            ]
+        },
+        "ideogram": {
+            "description": "टेक्स्ट-एम्बेडेड इमेज जनरेशन में उत्कृष्ट AI आर्ट टूल",
+            "fullDescription": "Ideogram टेक्स्ट वाली इमेज बनाने में उत्कृष्ट है, पोस्टर, लोगो, मीम आदि डिज़ाइन के लिए उपयुक्त है।",
+            "tags": [
+                "आर्ट",
+                "टेक्स्ट जनरेशन",
+                "डिज़ाइन"
+            ]
+        },
+        "grammarly": {
+            "description": "बुद्धिमान लेखन सहायक, व्याकरण जाँच उपकरण",
+            "fullDescription": "Grammarly सबसे लोकप्रिय अंग्रेजी लेखन सहायक उपकरण है, जो व्याकरण जाँच, स्पेलिंग सुधार, शैली सुझाव आदि सुविधाएं प्रदान करता है।",
+            "tags": [
+                "लेखन",
+                "व्याकरण",
+                "अंग्रेजी"
+            ]
+        },
+        "keling": {
+            "description": "Kuaishou का AI वीडियो जनरेशन मॉडल",
+            "fullDescription": "केलिंग Kuaishou द्वारा लॉन्च किया गया AI वीडियो जनरेशन बड़ा मॉडल है, जो उच्च गुणवत्ता वाले वीडियो जनरेशन और मोशन रिप्रेजेंटेशन का समर्थन करता है।",
+            "tags": [
+                "घरेलू",
+                "वीडियो",
+                "जनरेशन",
+                "Kuaishou"
+            ]
+        },
+        "sora": {
+            "description": "OpenAI का वीडियो जनरेशन मॉडल, आश्चर्यजनक परिणाम",
+            "fullDescription": "Sora OpenAI द्वारा विकसित टेक्स्ट-टू-वीडियो मॉडल है, जो एक मिनट तक के उच्च गुणवत्ता वाले वीडियो बना सकता है।",
+            "tags": [
+                "वीडियो",
+                "जनरेशन",
+                "OpenAI"
+            ]
+        },
+        "udio": {
+            "description": "उच्च गुणवत्ता AI संगीत निर्माण प्लेटफॉर्म",
+            "fullDescription": "Udio एक पेशेवर AI संगीत जनरेशन प्लेटफॉर्म है जो विभिन्न संगीत शैलियों का समर्थन करता है और उत्कृष्ट संगीत गुणवत्ता प्रदान करता है।",
+            "tags": [
+                "ऑडियो",
+                "संगीत",
+                "जनरेशन"
+            ]
+        },
+        "speechify": {
+            "description": "टेक्स्ट-टू-स्पीच पठन उपकरण",
+            "fullDescription": "Speechify एक शक्तिशाली टेक्स्ट-टू-स्पीच उपकरण है जो लेख, PDF, किताबें आदि को ऑडियो में परिवर्तित करता है।",
+            "tags": [
+                "ऑडियो",
+                "पठन",
+                "उत्पादकता"
+            ]
+        },
+        "claude-artifacts": {
+            "description": "Claude की कोड जनरेशन और प्रीव्यू सुविधा",
+            "fullDescription": "Claude Artifacts Claude द्वारा लॉन्च की गई इंटरैक्टिव कोड जनरेशन सुविधा है, जो React कॉम्पोनेंट, SVG, दस्तावेज़ आदि जनरेट करने और रियल-टाइम प्रीव्यू का समर्थन करती है।",
+            "tags": [
+                "कोडिंग",
+                "कोड जनरेशन",
+                "प्रीव्यू"
+            ]
+        },
+        "perplexity": {
+            "description": "AI सर्च इंजन, शक्तिशाली सूचना प्राप्ति उपकरण",
+            "fullDescription": "Perplexity AI-संचालित सर्च इंजन है जो प्रश्नों को समझता है और कई स्रोतों से उत्तर एकत्रित करके उद्धृत स्रोतों के साथ सटीक उत्तर प्रदान करता है।",
+            "tags": [
+                "खोज",
+                "उत्पादकता",
+                "अनुसंधान"
+            ]
+        },
+        "tome": {
+            "description": "AI स्टोरीटेलिंग और प्रेजेंटेशन टूल",
+            "fullDescription": "Tome AI-संचालित स्टोरीटेलिंग टूल है जो उपयोगकर्ताओं को आकर्षक प्रेजेंटेशन और स्टोरी तेजी से बनाने में मदद करता है।",
+            "tags": [
+                "PPT",
+                "स्टोरीटेलिंग",
+                "प्रेजेंटेशन"
+            ]
+        },
+        "otter": {
+            "description": "AI मीटिंग रिकॉर्डिंग और ट्रांसक्रिप्शन टूल",
+            "fullDescription": "Otter.ai एक बुद्धिमान मीटिंग सहायक है जो मीटिंग सामग्री को रियल-टाइम में ट्रांसक्राइब करता है, सारांश तैयार करता है और एक्शन आइटम निकालता है।",
+            "tags": [
+                "मीटिंग",
+                "ट्रांसक्रिप्शन",
+                "उत्पादकता"
+            ]
+        },
+        "fireflies": {
+            "description": "AI मीटिंग सहायक, स्वचालित रिकॉर्डिंग और विश्लेषण",
+            "fullDescription": "Fireflies एक AI मीटिंग सहायक है जो स्वचालित रूप से मीटिंग में शामिल हो सकता है, ट्रांसक्रिप्ट रिकॉर्ड कर सकता है और सारांश तैयार कर सकता है।",
+            "tags": [
+                "मीटिंग",
+                "ट्रांसक्रिप्शन",
+                "विश्लेषण"
+            ]
+        },
+        "mem": {
+            "description": "AI-संचालित नोट्स और ज्ञान प्रबंधन उपकरण",
+            "fullDescription": "Mem.ai AI-नेटिव नोट्स ऐप है जो स्वचालित संगठन, स्मार्ट खोज और बुद्धिमान लेखन का समर्थन करता है।",
+            "tags": [
+                "नोट्स",
+                "ज्ञान प्रबंधन",
+                "AI-नेटिव"
+            ]
+        },
+        "remove-bg": {
+            "description": "वन-क्लिक बैकग्राउंड हटाने का उपकरण",
+            "fullDescription": "Remove.bg सबसे लोकप्रिय ऑनलाइन बैकग्राउंड हटाने का उपकरण है जो AI तकनीक का उपयोग करके एक क्लिक में इमेज बैकग्राउंड हटाता है।",
+            "tags": [
+                "इमेज प्रोसेसिंग",
+                "बैकग्राउंड हटाना",
+                "डिज़ाइन"
+            ]
+        },
+        "figma-ai": {
+            "description": "Figma में एकीकृत AI डिज़ाइन सुविधाएं",
+            "fullDescription": "Figma AI, Figma डिज़ाइन टूल में एकीकृत AI सुविधाएं हैं जो स्वचालित डिज़ाइन जनरेशन, स्मार्ट खोज और कंटेंट जनरेशन का समर्थन करती हैं।",
+            "tags": [
+                "डिज़ाइन",
+                "UI/UX",
+                "सहयोग"
+            ]
+        },
+        "recraft": {
+            "description": "AI वेक्टर ग्राफिक्स और इलस्ट्रेशन जनरेशन टूल",
+            "fullDescription": "Recraft एक पेशेवर AI डिज़ाइन टूल है जो वेक्टर ग्राफिक्स, इलस्ट्रेशन, आइकन आदि बनाने का समर्थन करता है।",
+            "tags": [
+                "डिज़ाइन",
+                "वेक्टर",
+                "इलस्ट्रेशन"
+            ]
+        },
+        "magician": {
+            "description": "Figma का AI प्लगइन, टेक्स्ट से आइकन",
+            "fullDescription": "Magician Figma का AI प्लगइन है जो टेक्स्ट विवरण को आइकन और इमेज में परिवर्तित कर सकता है, विभिन्न डिज़ाइन शैलियों का समर्थन करता है।",
+            "tags": [
+                "डिज़ाइन",
+                "Figma प्लगइन",
+                "आइकन"
+            ]
+        }
     }
 }

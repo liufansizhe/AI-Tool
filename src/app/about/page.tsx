@@ -1,9 +1,14 @@
+"use client";
+
 import { Github, Mail, Sparkles, Target, Users } from "lucide-react";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export default function AboutPage() {
+  const { t } = useLanguage();
+
   return (
     <>
       <Header />
@@ -15,11 +20,10 @@ export default function AboutPage() {
               <Sparkles className='w-8 h-8 text-blue-600' />
             </div>
             <h1 className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'>
-              关于 AI工具箱
+              {t("about.title")}
             </h1>
             <p className='text-xl text-gray-600 max-w-2xl mx-auto'>
-              我们致力于帮助用户发现最实用的 AI 工具，让每个人都能享受 AI
-              带来的便利
+              {t("about.subtitle")}
             </p>
           </div>
         </section>
@@ -33,11 +37,9 @@ export default function AboutPage() {
                   <Target className='w-6 h-6 text-blue-600' />
                 </div>
                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
-                  我们的使命
+                  {t("about.mission")}
                 </h3>
-                <p className='text-gray-600'>
-                  帮助用户快速找到合适的 AI 工具，提升工作和创作效率
-                </p>
+                <p className='text-gray-600'>{t("about.missionDesc")}</p>
               </div>
 
               <div className='text-center p-8 bg-white rounded-2xl border border-gray-100'>
@@ -45,11 +47,9 @@ export default function AboutPage() {
                   <Users className='w-6 h-6 text-green-600' />
                 </div>
                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
-                  服务对象
+                  {t("about.audience")}
                 </h3>
-                <p className='text-gray-600'>
-                  面向所有希望使用 AI 工具提升效率的个人用户和企业团队
-                </p>
+                <p className='text-gray-600'>{t("about.audienceDesc")}</p>
               </div>
 
               <div className='text-center p-8 bg-white rounded-2xl border border-gray-100'>
@@ -57,11 +57,9 @@ export default function AboutPage() {
                   <Sparkles className='w-6 h-6 text-purple-600' />
                 </div>
                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
-                  核心价值
+                  {t("about.values")}
                 </h3>
-                <p className='text-gray-600'>
-                  精选优质工具、提供准确信息、保持及时更新
-                </p>
+                <p className='text-gray-600'>{t("about.valuesDesc")}</p>
               </div>
             </div>
           </div>
@@ -72,53 +70,26 @@ export default function AboutPage() {
           <div className='max-w-3xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='bg-white rounded-2xl shadow-sm border border-gray-200 p-8'>
               <h2 className='text-2xl font-bold text-gray-900 mb-6'>
-                为什么选择我们？
+                {t("about.whyUs")}
               </h2>
               <div className='space-y-6 text-gray-600'>
-                <p>
-                  在 AI 工具爆发的时代，每天都会有新的 AI
-                  产品出现。面对琳琅满目的选择，
-                  很多用户会感到困惑：哪个工具适合我？哪个更好用？是否免费？
-                </p>
-                <p>
-                  AI工具箱就是为了解决这些问题而诞生的。我们精心筛选全球优质的
-                  AI 工具，
-                  按照分类整理，标注清晰的价格信息，让你能够快速找到最适合自己的工具。
-                </p>
-                <p>
-                  我们的目标是成为最值得信赖的 AI 工具导航站，帮助每一位用户在
-                  AI 时代 提升效率、释放创造力。
-                </p>
+                <p>{t("about.whyUsP1")}</p>
+                <p>{t("about.whyUsP2")}</p>
+                <p>{t("about.whyUsP3")}</p>
               </div>
 
               <h2 className='text-2xl font-bold text-gray-900 mb-6 mt-12'>
-                收录标准
+                {t("about.criteria")}
               </h2>
               <ul className='space-y-3 text-gray-600'>
-                <li className='flex items-start gap-3'>
-                  <span className='w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0'>
-                    1
-                  </span>
-                  <span>工具必须实际可用，不接受仅处于概念阶段的产品</span>
-                </li>
-                <li className='flex items-start gap-3'>
-                  <span className='w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0'>
-                    2
-                  </span>
-                  <span>优先收录有实际用户价值和良好口碑的工具</span>
-                </li>
-                <li className='flex items-start gap-3'>
-                  <span className='w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0'>
-                    3
-                  </span>
-                  <span>保持信息更新，定期核实工具状态</span>
-                </li>
-                <li className='flex items-start gap-3'>
-                  <span className='w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0'>
-                    4
-                  </span>
-                  <span>提供客观准确的价格和功能信息</span>
-                </li>
+                {(["1", "2", "3", "4"] as const).map((n) => (
+                  <li key={n} className='flex items-start gap-3'>
+                    <span className='w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0'>
+                      {n}
+                    </span>
+                    <span>{t(`about.criteria${n}`)}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -127,10 +98,10 @@ export default function AboutPage() {
         {/* Contact */}
         <section id='contact' className='py-16'>
           <div className='max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-            <h2 className='text-3xl font-bold text-gray-900 mb-6'>联系我们</h2>
-            <p className='text-gray-600 mb-8'>
-              有任何建议或合作意向？欢迎通过以下方式联系我们
-            </p>
+            <h2 className='text-3xl font-bold text-gray-900 mb-6'>
+              {t("about.contact")}
+            </h2>
+            <p className='text-gray-600 mb-8'>{t("about.contactDesc")}</p>
             <div className='flex flex-col sm:flex-row items-center justify-center gap-4'>
               <a
                 href='mailto:651828515@qq.com'
